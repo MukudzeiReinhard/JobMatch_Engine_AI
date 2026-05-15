@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Match Results{% endblock %}
+
+{% block head %}
+<style>
+    .match-bar-container { height: 12px; border-radius: 10px; background-color: #e9ecef; }
+    .custom-bar { transition: width 0.6s ease; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12">
+        <h1 class="mb-4">Your Job Match Results</h1>
+
+        {% if not resume_exists %}
+        <div class="alert alert-warning" role="alert">
+            <strong>No resume uploaded!</strong> Upload your resume to get more accurate skill-based matches.
+            <a href="{% url 'upload_resume' %}" class="alert-link">Upload Resume</a>
+        </div>
+        {% endif %}
+
+        {% if results %}
+            {% for item in results %}
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <div class="row gy-3">
+                        <div class="col-12 col-md-8">
+                            <h5 class="card-title">{{ item.job.title }}</h5>
+                            {% if item.job.company %}
+                            <p class="card-text"><strong>Company:</strong> {{ item.job.company }}</p>
+                            {% endif %}
+                            {% if item.job.location %}
+                            <p class="card-text"><strong>Location:</strong> {{ item.job.location }}</p>
+                            {% endif %}
+                            {% if item.job.description %}
+                            <p class="card-text"><strong>Description:</strong> {{ item.job.description }}</p>
+                            {% endif %}
+                            {% if item.job.department %}
+                            <p class="card-text"><strong>Department:</strong> {{ item.job.department.name }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="col-12 col-md-4 text-md-end">
+                            <h6>Match Score</h6>
+                            <div class="d-flex align-items-center justify-content-md-end gap-2 mb-3">
+                                <div class="progress flex-grow-1 match-bar-container" style="max-width: 150px;">
+                                    <div class="progress-bar bg-success custom-bar" role="progressbar" style="width: {{ item.score }}%;" aria-valuenow="{{ item.score }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="fw-bold fs-5">{{ item.score }}%</span>
+                            </div>
+                            <form method="post" action="{% url 'apply_to_job' item.job.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary w-100">Apply Now</button>
+                            </form>
+                        </div>
+                    </div>
+                    {% if item.missing_trainings %}
+                    <div class="mt-3">
+                        <small class="text-muted">Recommended Trainings for Missing Skills:</small><br>
+                        {% for training in item.missing_trainings %}
+                            <div class="mb-2">
+                                <strong>{{ training.skill_name }} (Importance: {{ training.importance }}/5)</strong><br>
+                                <small>Recommended Courses:</small>
+                                <ul class="mb-1">
+                                    {% for course in training.courses %}
+                                        <li>{{ course }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="alert alert-info" role="alert">
+                No job matches found. Try updating your profile or uploading a resume for better results.
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

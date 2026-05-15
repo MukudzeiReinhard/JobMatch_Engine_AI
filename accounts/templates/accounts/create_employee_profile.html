@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Employee Profile{% endblock %}
+
+{% block head %}
+<style>
+    .form-section { margin-bottom: 1.75rem; }
+    .form-group label { font-weight: 600; }
+    .error { color: #c92a2a; margin-top: 0.5rem; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+        <div class="card shadow-sm p-4 mb-4">
+            <h1 class="h3 mb-3">Create Your Employee Profile</h1>
+            <p class="text-muted">Complete your profile information to get started with job matching.</p>
+            <hr>
+            <form method="POST">
+                {% csrf_token %}
+
+                <div class="form-section">
+                    <h2 class="h5">Personal Information</h2>
+                    <div class="mb-3">
+                        <label for="id_name" class="form-label">{{ form.name.label }}</label>
+                        {{ form.name }}
+                        {% if form.name.errors %}
+                            <div class="error">{{ form.name.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_surname" class="form-label">{{ form.surname.label }}</label>
+                        {{ form.surname }}
+                        {% if form.surname.errors %}
+                            <div class="error">{{ form.surname.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_birth_date" class="form-label">{{ form.birth_date.label }}</label>
+                        {{ form.birth_date }}
+                        {% if form.birth_date.errors %}
+                            <div class="error">{{ form.birth_date.errors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="h5">Contact Information</h2>
+                    <div class="mb-3">
+                        <label for="id_username" class="form-label">{{ form.username.label }}</label>
+                        {{ form.username }}
+                        {% if form.username.errors %}
+                            <div class="error">{{ form.username.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_email" class="form-label">{{ form.email.label }}</label>
+                        {{ form.email }}
+                        {% if form.email.errors %}
+                            <div class="error">{{ form.email.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_location" class="form-label">{{ form.location.label }}</label>
+                        {{ form.location }}
+                        {% if form.location.errors %}
+                            <div class="error">{{ form.location.errors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="h5">About You</h2>
+                    <div class="mb-3">
+                        <label for="id_bio" class="form-label">{{ form.bio.label }}</label>
+                        {{ form.bio }}
+                        {% if form.bio.errors %}
+                            <div class="error">{{ form.bio.errors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Profile</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

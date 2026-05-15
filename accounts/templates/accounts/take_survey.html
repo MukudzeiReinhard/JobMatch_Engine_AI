@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block title %}Employee Cognitive Survey{% endblock %}
+
+{% block head %}
+<style>
+    .question { margin-bottom: 1.5rem; }
+    .question label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+    .options label { display: inline-block; margin-right: 1rem; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+        <div class="card shadow-sm p-4">
+            <h1 class="h4 mb-3">HBDI Cognitive Profile Assessment</h1>
+            <p class="text-muted mb-4">Please answer the following questions to assess your cognitive preferences. There are no right or wrong answers.</p>
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <h2 class="h6">Analytical Thinking</h2>
+                    <div class="question">
+                        <label>{{ form.q1.label }}</label>
+                        <div class="options">{{ form.q1 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q2.label }}</label>
+                        <div class="options">{{ form.q2 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q3.label }}</label>
+                        <div class="options">{{ form.q3 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q4.label }}</label>
+                        <div class="options">{{ form.q4 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q5.label }}</label>
+                        <div class="options">{{ form.q5 }}</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="h6">Practical Thinking</h2>
+                    <div class="question">
+                        <label>{{ form.q6.label }}</label>
+                        <div class="options">{{ form.q6 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q7.label }}</label>
+                        <div class="options">{{ form.q7 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q8.label }}</label>
+                        <div class="options">{{ form.q8 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q9.label }}</label>
+                        <div class="options">{{ form.q9 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q10.label }}</label>
+                        <div class="options">{{ form.q10 }}</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="h6">Relational Thinking</h2>
+                    <div class="question">
+                        <label>{{ form.q11.label }}</label>
+                        <div class="options">{{ form.q11 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q12.label }}</label>
+                        <div class="options">{{ form.q12 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q13.label }}</label>
+                        <div class="options">{{ form.q13 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q14.label }}</label>
+                        <div class="options">{{ form.q14 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q15.label }}</label>
+                        <div class="options">{{ form.q15 }}</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h2 class="h6">Experimental Thinking</h2>
+                    <div class="question">
+                        <label>{{ form.q16.label }}</label>
+                        <div class="options">{{ form.q16 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q17.label }}</label>
+                        <div class="options">{{ form.q17 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q18.label }}</label>
+                        <div class="options">{{ form.q18 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q19.label }}</label>
+                        <div class="options">{{ form.q19 }}</div>
+                    </div>
+                    <div class="question">
+                        <label>{{ form.q20.label }}</label>
+                        <div class="options">{{ form.q20 }}</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Survey</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

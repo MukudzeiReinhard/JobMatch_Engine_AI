@@ -1,0 +1,3 @@
+Found 47 test(s).
+System check identified no issues (0 silenced).
+Error extracting skills with Gemini: Gemini returned an empty response. Check your API key and service availability.

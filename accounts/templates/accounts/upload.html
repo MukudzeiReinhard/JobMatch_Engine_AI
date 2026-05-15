@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload Resume{% endblock %}
+
+{% block head %}
+<style>
+    .upload-card { max-width: 640px; margin: 0 auto; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+        <div class="card shadow-sm upload-card p-4">
+            <h1 class="h4 mb-3">Upload Your Resume</h1>
+            {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+            {% endif %}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="resume" class="form-label">Select Resume (PDF or DOCX):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.docx" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Upload Resume</button>
+            </form>
+            <div class="mt-3">
+                <a href="{% url 'employee_profile' %}">Back to Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

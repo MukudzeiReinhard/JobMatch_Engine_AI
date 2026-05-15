@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Potential Candidates by Job{% endblock %}
+
+{% block head %}
+<style>
+    .job-section { background-color: #ffffff; border-radius: 0.75rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.06); border-left: 0.4rem solid #0d6efd; }
+    .candidate-row { transition: background-color 0.2s; border-radius: 0.5rem; }
+    .candidate-row:hover { background-color: #f8f9fa; }
+    .score-pill { font-size: 0.9rem; font-weight: bold; min-width: 65px; text-align: center; }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="h3 fw-bold text-dark">Potential Candidates by Job</h1>
+            <p class="text-muted">Browse jobs and see automatically ranked talent based on composite matching scores.</p>
+        </div>
+    </div>
+
+    {% regroup jobs by job as job_list %}
+
+    {% if job_list %}
+        {% for group in job_list %}
+            <div class="job-section p-4 mb-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-3">
+                    <div>
+                        <h2 class="h5 mb-1 text-primary">{{ group.grouper.title }}</h2>
+                        <span class="text-muted small">
+                            <i class="bi bi-building"></i> {{ group.grouper.company|default:"Internal Role" }}
+                            | <i class="bi bi-geo-alt"></i> {{ group.grouper.location|default:"Remote" }}
+                        </span>
+                    </div>
+                    <span class="badge bg-secondary">{{ group.list|length }} Candidates</span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table border">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Candidate</th>
+                                <th>Analytical</th>
+                                <th>Practical</th>
+                                <th>Relational</th>
+                                <th>Experimental</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in group.list %}
+                            <tr>
+                                <td class="fw-bold text-secondary">#{{ forloop.counter }}</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                            <i class="bi bi-person-fill"></i>
+                                        </div>
+                                        <div>
+                                            <div class="fw-bold text-dark">{{ record.employee.user.get_full_name|default:record.employee.user.username }}</div>
+                                            <div class="text-muted small">{{ record.employee.email|default:"No Email" }}</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="background-color: {% if record.employee.target_analytical > 70 %}#c8e6c9{% elif record.employee.target_analytical > 40 %}#fff9c4{% else %}#ffcdd2{% endif %}; text-align: center;">
+                                    {{ record.employee.target_analytical }}%
+                                </td>
+                                <td style="background-color: {% if record.employee.target_practical > 70 %}#c8e6c9{% elif record.employee.target_practical > 40 %}#fff9c4{% else %}#ffcdd2{% endif %}; text-align: center;">
+                                    {{ record.employee.target_practical }}%
+                                </td>
+                                <td style="background-color: {% if record.employee.target_relational > 70 %}#c8e6c9{% elif record.employee.target_relational > 40 %}#fff9c4{% else %}#ffcdd2{% endif %}; text-align: center;">
+                                    {{ record.employee.target_relational }}%
+                                </td>
+                                <td style="background-color: {% if record.employee.target_experimental > 70 %}#c8e6c9{% elif record.employee.target_experimental > 40 %}#fff9c4{% else %}#ffcdd2{% endif %}; text-align: center;">
+                                    {{ record.employee.target_experimental }}%
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="text-center py-5 bg-white rounded-3 shadow-sm">
+            <i class="bi bi-folder-x display-1 text-muted"></i>
+            <h3 class="mt-3 text-dark">No Compatibility Data Found</h3>
+            <p class="text-muted">Run your recommendation engine matching algorithm to populate this list.</p>
+        </div>
+    {% endif %}
+{% endblock %}

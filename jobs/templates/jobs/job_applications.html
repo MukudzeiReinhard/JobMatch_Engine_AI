@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Applications{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+        <h1 class="mb-4">Job Applications</h1>
+        {% for job, apps in applications.items %}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="mb-1">{{ job.title }}</h5>
+                <small class="text-muted">{{ job.company }} - {{ job.location }}</small>
+            </div>
+            <div class="card-body">
+                {% if apps %}
+                <ul class="list-group list-group-flush">
+                    {% for app in apps %}
+                    <li class="list-group-item">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
+                            <div>
+                                <strong>{{ app.employee.name }} {{ app.employee.surname }}</strong> ({{ app.employee.username }})
+                                <br>
+                                <small class="text-muted">Applied on: {{ app.application_date|date:"M d, Y" }}</small>
+                                {% if app.employee.resume %}
+                                <br>
+                                <a href="{{ app.employee.resume.url }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">View Resume</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p class="text-muted">No applications yet.</p>
+                {% endif %}
+            </div>
+        </div>
+        {% empty %}
+        <div class="alert alert-info">No jobs available.</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

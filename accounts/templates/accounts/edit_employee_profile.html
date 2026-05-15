@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Employee Profile{% endblock %}
+
+{% block head %}
+<style>
+    .profile-container { background-color: #ffffff; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08); }
+    .btn-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+        <div class="profile-container">
+            <h2 class="mb-4 text-center">Update Employee Profile</h2>
+            <form method="post" class="profile-form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="btn-group mt-3">
+                    <button type="submit" class="btn btn-primary flex-fill">Save Changes</button>
+                    <a href="{% url 'employee_profile' %}" class="btn btn-secondary flex-fill">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

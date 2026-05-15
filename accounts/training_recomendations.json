@@ -1,0 +1,84 @@
+{
+  "training_recommendations": [
+    {
+      "skill": "python",
+      "courses": [
+        "Python for Data Science and Machine Learning Bootcamp",
+        "Automate the Boring Stuff with Python",
+        "Django for Professionals: Real-world Web Development"
+      ]
+    },
+    {
+      "skill": "sql",
+      "courses": [
+        "The Complete SQL Bootcamp: Go from Zero to Hero",
+        "SQL for Data Analysis and Business Intelligence",
+        "Advanced SQL: Logical Query Processing"
+      ]
+    },
+    {
+      "skill": "excel",
+      "courses": [
+        "Microsoft Excel - Excel from Beginner to Advanced",
+        "Data Analysis with Dashboards and Pivot Tables",
+        "Excel VBA Programming: The Complete Guide"
+      ]
+    },
+    {
+      "skill": "aws",
+      "courses": [
+        "AWS Certified Solutions Architect Associate",
+        "Ultimate AWS Certified Developer Associate",
+        "AWS Cloud Practitioner Essentials"
+      ]
+    },
+    {
+      "skill": "docker",
+      "courses": [
+        "Docker and Kubernetes: The Complete Guide",
+        "Docker for Java Developers",
+        "Hands-on Docker for DevOps Engineers"
+      ]
+    },
+    {
+      "skill": "risk assessment",
+      "courses": [
+        "Operational Risk Management in Banking and Finance",
+        "ISO 31000 Risk Management Framework",
+        "Financial Risk Manager (FRM) Exam Prep"
+      ]
+    },
+    {
+      "skill": "accounting",
+      "courses": [
+        "Accounting in 60 Minutes - A Brief Introduction",
+        "Financial Accounting Fundamentals",
+        "Forensic Accounting and Fraud Examination"
+      ]
+    },
+    {
+      "skill": "branding",
+      "courses": [
+        "Brand Management: Aligning Business, Brand and Behaviour",
+        "Visual Identity Design: Create a Brand Manual",
+        "Digital Branding and Engagement"
+      ]
+    },
+    {
+      "skill": "adobe suite",
+      "courses": [
+        "Graphic Design Masterclass: Learn Great Design",
+        "Adobe Premiere Pro CC: Video Editing",
+        "Illustrator CC 2026 MasterClass"
+      ]
+    },
+    {
+      "skill": "labor law",
+      "courses": [
+        "Introduction to Labor Relations and Collective Bargaining",
+        "Human Resources Management: HR for People Managers",
+        "Employment Law and Compliance Training"
+      ]
+    }
+  ]
+}
