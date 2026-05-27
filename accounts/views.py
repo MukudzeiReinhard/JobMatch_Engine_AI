@@ -1,24 +1,26 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login
-from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
-from django.views import View
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.core.exceptions import PermissionDenied, ValidationError
-from . import skills_extraction
-from .validators import validate_resume_size_and_type
-from .models import employee_account
-from .forms import UserProfileAccountForm, HBIForm
-from jobs.models import Department, Job, JobSkillRequirement, JobEmployeeCompatibility, JobApplications
+import io
+import json
+import logging
+import os
+
 import fitz
 from docx import Document
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied, ValidationError
 from django.db import transaction
-import io
-from collections import OrderedDict
-import json
-import os
+from django.shortcuts import render, redirect
+from django.views import View
+
+from . import skills_extraction
+from .forms import HBIForm, UserProfileAccountForm
+from .models import employee_account
+from .validators import validate_resume_size_and_type
+from jobs.models import Job, JobEmployeeCompatibility, JobApplications
+
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 def signup(request):
@@ -26,14 +28,13 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            # Create an employee account for the new user
             employee_account.objects.create(user=user)
-            login(request, user)  # Log the user in after successful signup
-            return redirect('create_employee_profile') # Redirect to profile creation after signup
+            login(request, user)
+            return redirect('create_employee_profile')
     else:
-            #print(form.errors)
-        form = UserCreationForm()  # Re-instantiate the form to clear it after a failed POST
-    return render(request, 'accounts/signup.html', {'form': form})  # Render the signup form for GET requests
+        form = UserCreationForm()
+
+    return render(request, 'accounts/signup.html', {'form': form})
 
 #TODO: in the employee profile add a button to take the survey, and a button to upload a resume. The survey should be a form that allows the employee to input their cognitive scores, and save them to their profile. The matched jobs page should also show the top 5 matching jobs based on the cognitive scores, and a button to view the details of each job. The job details page should show the job description, required skills, company name, location, and a button to apply for the job. The apply button should redirect to a page where the employee can submit their application for the job, and upload their resume if they haven't already. The application page should also show the job description and required skills for reference.  
 @login_required
@@ -67,14 +68,6 @@ def hr_dashboard(request):
 # and use the cv_extraction.py module to extract the text from the resume and save it to the employee's profile. 
 # This will be used to match the employee to jobs based on the skills and experience listed in their resume.
 
-import fitz  # PyMuPDF
-from docx import Document
-from django.db import transaction
-from django.shortcuts import render, redirect
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views import View
-from . import skills_extraction # Assuming your Gemini logic is here
-
 class ResumeUploadView(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'accounts/upload.html')
@@ -104,21 +97,24 @@ class ResumeUploadView(LoginRequiredMixin, View):
                     text = ' '.join([page.get_text() for page in doc])
                     doc.close()
                 except Exception as e:
-                    print(f'PDF parsing error: {e}')
-                    return render(request, 'accounts/upload.html', 
-                                {'error': 'Failed to read PDF. Please ensure it is a valid PDF file.'})
+                    logger.exception('PDF parsing error')
+                    return render(request, 'accounts/upload.html', {
+                        'error': 'Failed to read PDF. Please ensure it is a valid PDF file.'
+                    })
             elif file_name.endswith('.docx'):
                 try:
                     docx_file = io.BytesIO(file_content)
                     doc = Document(docx_file)
                     text = ' '.join([para.text for para in doc.paragraphs])
                 except Exception as e:
-                    print(f'DOCX parsing error: {e}')
-                    return render(request, 'accounts/upload.html',
-                                {'error': 'Failed to read DOCX. Please ensure it is a valid Word document.'})
+                    logger.exception('DOCX parsing error')
+                    return render(request, 'accounts/upload.html', {
+                        'error': 'Failed to read DOCX. Please ensure it is a valid Word document.'
+                    })
             else:
-                return render(request, 'accounts/upload.html',
-                            {'error': 'Unsupported file format. Please upload a PDF or DOCX file.'})
+                return render(request, 'accounts/upload.html', {
+                    'error': 'Unsupported file format. Please upload a PDF or DOCX file.'
+                })
 
             if not text.strip():
                 return render(request, 'accounts/upload.html',
@@ -131,19 +127,20 @@ class ResumeUploadView(LoginRequiredMixin, View):
                 # Call Gemini API to extract skills
                 try:
                     skills = skills_extraction.extract_skills_with_gemini(text)
-                    # Ensure skills is always a list and has valid values
                     if not isinstance(skills, list):
                         skills = [s.strip() for s in str(skills).split(',') if s.strip()]
                     skills = [s for s in skills if s.strip()]
 
                     if not skills:
-                        return render(request, 'accounts/upload.html',
-                                      {'error': 'No skills were extracted from the resume. Please upload a different resume or improve the document quality.'})
+                        return render(request, 'accounts/upload.html', {
+                            'error': 'No skills were extracted from the resume. Please upload a different resume or improve the document quality.'
+                        })
                 except Exception as e:
+                    logger.exception('Gemini API error')
                     error_text = str(e) or 'Unknown skill extraction error.'
-                    print(f'Gemini API error: {error_text}')
-                    return render(request, 'accounts/upload.html',
-                                  {'error': f'Failed to extract skills from resume: {error_text}'})
+                    return render(request, 'accounts/upload.html', {
+                        'error': f'Failed to extract skills from resume: {error_text}'
+                    })
                 
                 # Save to database
                 emp_acc.resume = resume_file
@@ -151,19 +148,29 @@ class ResumeUploadView(LoginRequiredMixin, View):
                 emp_acc.skills_list = ', '.join(skills).lower() if skills else ''
                 emp_acc.save()
 
-            return redirect('match_results')
+            return render(request, 'accounts/upload.html', {
+                'success': 'Resume uploaded successfully! Your skills have been extracted.'
+            })
 
-        except Exception as e:
-            print(f'Resume upload error: {e}')
+        except Exception:
+            logger.exception('Resume upload error')
             return render(request, 'accounts/upload.html', {
                 'error': 'An unexpected error occurred. Please try again.'
             })
         
-# this is ment to be for admin use only, to see all employee accounts in the system. Not linked to from anywhere in the UI
+# This view is HR-only and should only be visible to authorized users.
+@login_required
 def employee_list(request):
+    try:
+        profile = request.user.employee_account
+    except (AttributeError, employee_account.DoesNotExist):
+        raise PermissionDenied("Access denied")
+
+    if profile.role != employee_account.IS_HR:
+        raise PermissionDenied("Access denied")
+
     all_accounts = employee_account.objects.all()
-    context = {'accounts': all_accounts}
-    return render(request, 'accounts/create_account.html', context)
+    return render(request, 'accounts/create_account.html', {'accounts': all_accounts})
 # ----------- change into initial data collectioin for profile creation----------- 
 @login_required
 def create_employee_profile(request):
@@ -200,7 +207,10 @@ def take_survey(request):
             profile.target_relational = relational
             profile.target_experimental = experimental
             profile.save()
-            return redirect('employee_profile')  # Redirect to the profile page after saving
+            return render(request, 'accounts/take_survey.html', {
+                'form': form,
+                'success': 'Survey completed successfully! Your cognitive profile has been saved.'
+            })
     else:
         form = HBIForm()  # Show blank form on GET
 
@@ -253,10 +263,9 @@ def edit_employee_profile(request):
         form = UserProfileAccountForm(request.POST, instance=employee_profile)
         if form.is_valid():
             form.save()
-            return redirect('match_employee')  # Redirect to the profile page after saving
+            return redirect('employee_profile')
         else:
-            #print(form.errors)
-            return render(request, 'accounts/edit_employee_profile.html', {'form': form})  # Re-render the form with errors
+            return render(request, 'accounts/edit_employee_profile.html', {'form': form})
     else:
         form = UserProfileAccountForm(instance=employee_profile)  # Pre-fill the form with existing data
     return render(request, 'accounts/edit_employee_profile.html', {'form': form})
@@ -267,14 +276,30 @@ def edit_employee_profile(request):
 class JobMatchView(LoginRequiredMixin, View):
     def get(self, request):
         user_emp = request.user.employee_account
+        
+        # Check if survey is completed (all cognitive scores > 0)
+        survey_completed = (
+            user_emp.target_analytical > 0 and
+            user_emp.target_practical > 0 and
+            user_emp.target_relational > 0 and
+            user_emp.target_experimental > 0
+        )
+        resume_exists = bool(user_emp.resume)
+        
         available_jobs = Job.objects.all().prefetch_related('jobskillrequirement_set__skill')
         results = []
 
         # Load training recommendations
         training_file_path = os.path.join(os.path.dirname(__file__), 'training_recomendations.json')
-        with open(training_file_path, 'r') as f:
-            training_data = json.load(f)
-        training_dict = {item['skill']: item['courses'] for item in training_data['training_recommendations']}
+        try:
+            with open(training_file_path, 'r', encoding='utf-8') as f:
+                training_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            logger.warning('Unable to load training recommendations: %s', e)
+            training_data = {'training_recommendations': []}
+
+        training_dict = {item['skill'].lower(): item['courses'] for item in training_data.get('training_recommendations', [])}
+        user_skills = {skill.strip().lower() for skill in (user_emp.skills_list or '').split(',') if skill.strip()}
 
         for job in available_jobs:
             dept = job.department
@@ -307,12 +332,11 @@ class JobMatchView(LoginRequiredMixin, View):
 
             for req in requirements:
                 total_job_weight += req.importance
-                if req.skill.name.lower() in user_emp.skills_list:
+                skill_name_lower = req.skill.name.strip().lower()
+                if skill_name_lower in user_skills:
                     user_earned_weight += req.importance
                 else:
-                    # Get trainings for missing skill
-                    skill_lower = req.skill.name.lower()
-                    trainings = training_dict.get(skill_lower, [])
+                    trainings = training_dict.get(skill_name_lower, [])
                     if trainings:
                         missing_trainings.append({
                             'skill_name': req.skill.name,
@@ -340,7 +364,11 @@ class JobMatchView(LoginRequiredMixin, View):
                 })
 
         results.sort(key=lambda x: x['score'], reverse=True)
-        return render(request, 'accounts/match_results.html', {'results': results, 'resume_exists': bool(user_emp.resume)})
+        return render(request, 'accounts/match_results.html', {
+            'results': results,
+            'resume_exists': resume_exists,
+            'survey_completed': survey_completed
+        })
 
 # A simple View to handle the 'Apply' action
 class ApplyJobView(LoginRequiredMixin, View):

@@ -4,7 +4,6 @@
 
 {% block head %}
 <style>
-    .profile-card { border-top: 0.35rem solid #0d6efd; }
     .profile-avatar { width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 0.35rem solid #dee2e6; }
     .status-badge { font-weight: 600; }
 </style>
@@ -13,18 +12,43 @@
 {% block content %}
 <div class="row g-4">
     <div class="col-12 col-md-4">
-        <div class="card shadow-sm profile-card h-100">
+        <div class="card h-100">
             <div class="card-body text-center">
                 <img class="profile-avatar mb-3" src="https://ui-avatars.com/api/?name={{ employee.name }}+{{ employee.surname }}&size=256" alt="Profile Picture">
-                <h2 class="h5 mb-1">{{ employee.name }} {{ employee.surname }}</h2>
+                <h2 class="h5 fw-bold text-dark mb-1">{{ employee.name }} {{ employee.surname }}</h2>
                 <p class="text-muted mb-3">Update your account information below.</p>
                 <a href="{% url 'login' %}" class="btn btn-link">← Log Out</a>
             </div>
         </div>
     </div>
     <div class="col-12 col-md-8">
-        <div class="card shadow-sm profile-card h-100">
+        <div class="card h-100">
             <div class="card-body">
+                {% if employee.role == employee.IS_HR %}
+                <div class="d-flex align-items-center gap-2 mb-4">
+                    <span class="text-primary fs-5">HR Recruiter Dashboard</span>
+                </div>
+                <p class="text-muted mb-3">Access your recruitment tools and view candidate submissions.</p>
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-sm-6">
+                        <p class="mb-1 text-muted small">Role</p>
+                        <p class="mb-0">{{ employee.get_role_display }}</p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <p class="mb-1 text-muted small">Department</p>
+                        <p class="mb-0">{{ employee.department|default:"Not specified" }}</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-1 text-muted small">Recruiter Actions</p>
+                    <p class="mb-0">Post jobs, review candidate CVs, and manage your HR workflow from here.</p>
+                </div>
+                <div class="d-grid gap-2 gap-md-3">
+                    <a href="{% url 'create_job' %}" class="btn btn-primary">Post a New Job</a>
+                    <a href="{% url 'job_applications' %}" class="btn btn-outline-primary">View Submitted CVs</a>
+                    <a href="{% url 'hr_dashboard' %}" class="btn btn-secondary">Go to HR Dashboard</a>
+                </div>
+                {% else %}
                 <div class="d-flex align-items-center gap-2 mb-4">
                     <span class="text-primary fs-5">Employee Profile</span>
                 </div>
@@ -80,11 +104,12 @@
                 </div>
                 {% endif %}
                 <div class="d-grid gap-2 gap-md-3">
-                    <a href="{% url 'upload_resume' %}" class="btn btn-success">📄 Upload Resume</a>
-                    <a href="{% url 'take_survey' %}" class="btn btn-purple" style="background-color:#6f42c1; color:#fff;">📋 Take Survey</a>
-                    <a href="{% url 'match_results' %}" class="btn btn-primary">🎯 Find Job Matches</a>
-                    <a href="{% url 'edit_employee_profile' %}" class="btn btn-secondary">✏️ Edit Profile</a>
+                    <a href="{% url 'upload_resume' %}" class="btn btn-success"> Upload Resume</a>
+                    <a href="{% url 'take_survey' %}" class="btn btn-purple" style="background-color:#6f42c1; color:#fff;">Take Survey</a>
+                    <a href="{% url 'match_results' %}" class="btn btn-primary"> Job Matches</a>
+                    <a href="{% url 'edit_employee_profile' %}" class="btn btn-secondary">Edit Profile</a>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>

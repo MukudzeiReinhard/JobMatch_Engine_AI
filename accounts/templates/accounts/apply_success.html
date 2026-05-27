@@ -4,15 +4,15 @@
 
 {% block content %}
 <div class="row justify-content-center">
-    <div class="col-12 col-md-8">
-        <div class="card shadow-sm">
+    <div class="col-12 col-md-6">
+        <div class="card">
             <div class="card-body text-center">
-                <h1 class="card-title">Application Submitted!</h1>
+                <h1 class="h3 fw-bold text-dark mb-3">Application Submitted!</h1>
                 {% if message %}
-                <p class="card-text">{{ message }}</p>
+                <p class="text-muted">{{ message }}</p>
                 {% endif %}
-                <p class="card-text">You have successfully applied for the job: <strong>{{ job.title }}</strong></p>
-                <a href="{% url 'match_results' %}" class="btn btn-primary">Back to Job Matches</a>
+                <p class="text-muted">You have successfully applied for the job: <strong>{{ job.title }}</strong></p>
+                <a href="{% url 'match_results' %}" class="btn btn-primary mt-3">Back to Job Matches</a>
             </div>
         </div>
     </div>

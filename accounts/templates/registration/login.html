@@ -2,17 +2,11 @@
 
 {% block title %}System Login{% endblock %}
 
-{% block head %}
-<style>
-    .login-card { max-width: 420px; margin: 0 auto; }
-</style>
-{% endblock %}
-
 {% block content %}
 <div class="row justify-content-center align-items-center min-vh-75">
-    <div class="col-12 col-md-6">
-        <div class="card shadow-sm login-card p-4">
-            <h2 class="h4 text-center mb-3">System Login</h2>
+    <div class="col-12 col-md-5">
+        <div class="card p-4">
+            <h2 class="h4 fw-bold text-dark text-center mb-4">System Login</h2>
             {% if form.errors %}
                 <div class="alert alert-danger">Your username and password didn't match. Please try again.</div>
             {% endif %}

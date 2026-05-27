@@ -13,9 +13,16 @@
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-12 col-lg-10">
-        <div class="card shadow-sm p-4">
-            <h1 class="h4 mb-3">HBDI Cognitive Profile Assessment</h1>
+        <div class="card p-4">
+            <h1 class="h4 fw-bold text-dark mb-3">HBDI Cognitive Profile Assessment</h1>
+            {% if success %}
+            <div class="alert alert-success">
+                <strong>Success!</strong> {{ success }}
+                <a href="{% url 'employee_profile' %}" class="btn btn-sm btn-success mt-2">Continue to Profile</a>
+            </div>
+            {% else %}
             <p class="text-muted mb-4">Please answer the following questions to assess your cognitive preferences. There are no right or wrong answers.</p>
+            {% endif %}
             <form method="post">
                 {% csrf_token %}
                 <div class="mb-4">

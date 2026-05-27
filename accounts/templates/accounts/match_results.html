@@ -12,7 +12,7 @@
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-12">
-        <h1 class="mb-4">Your Job Match Results</h1>
+        <h1 class="display-6 fw-bold text-dark mb-4">Your Job Match Results</h1>
 
         {% if not resume_exists %}
         <div class="alert alert-warning" role="alert">
@@ -21,9 +21,16 @@
         </div>
         {% endif %}
 
-        {% if results %}
+        {% if not survey_completed %}
+        <div class="alert alert-warning" role="alert">
+            <strong>Survey not completed!</strong> Take the cognitive profile assessment to get personalized job matches.
+            <a href="{% url 'take_survey' %}" class="alert-link">Take Survey</a>
+        </div>
+        {% endif %}
+
+        {% if resume_exists and survey_completed and results %}
             {% for item in results %}
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4">
                 <div class="card-body">
                     <div class="row gy-3">
                         <div class="col-12 col-md-8">
@@ -74,9 +81,13 @@
                 </div>
             </div>
             {% endfor %}
-        {% else %}
+        {% elif resume_exists and survey_completed %}
             <div class="alert alert-info" role="alert">
                 No job matches found. Try updating your profile or uploading a resume for better results.
+            </div>
+        {% elif not resume_exists or not survey_completed %}
+            <div class="alert alert-info" role="alert">
+                Complete your resume upload and cognitive survey to view job matches.
             </div>
         {% endif %}
     </div>
