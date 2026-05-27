@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-12 col-lg-10">
@@ -33,12 +35,6 @@
                         {% endfor %}
                     </p>
                     {% endif %}
-                    <p class="mb-0 text-muted">
-                        Analytical: <span class="badge bg-light text-dark">{{ job.target_analytical }}</span> | 
-                        Practical: <span class="badge bg-light text-dark">{{ job.target_practical }}</span> | 
-                        Relational: <span class="badge bg-light text-dark">{{ job.target_relational }}</span> | 
-                        Experimental: <span class="badge bg-light text-dark">{{ job.target_experimental }}</span>
-                    </p>
                 </div>
 
                 <div class="ms-3 text-end">
