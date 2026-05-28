@@ -1,76 +1,60 @@
-import google.generativeai as genai
-import os
+from google import genai
+from google.genai import types
+from pydantic import BaseModel
+from django.conf import settings
+import logging
 import re
 
-from mysite import settings
+logger = logging.getLogger(__name__)
 
-# Configure the API
-genai.configure(api_key=settings.GEMINI_API_KEY)
-# Use a supported Gemini model that works with the current SDK/API version
-model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
-def extract_skills_with_gemini(cv_text):
-    """Extract professional skills from resume text using Gemini API.
+# Define the exact data structure we want back
+class SkillsInventory(BaseModel):
+    skills: list[str]
+
+def anonymous_text(text: str) -> str:
+    # Strip out phone numbers (Handles common formats +263..., 077..., etc.) and email addresses to protect privacy before sending to Gemini
+    text = re.sub(r'[\w\.-]+@[\w\.-]+\.\w+', '[EMAIL_REMOVED]', text)
+    text = re.sub(r'\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}', '[PHONE_REMOVED]', text)
+    return text 
+
+def extract_skills_with_gemini(text: str) -> list[str]:
+    text = anonymous_text(text)
+    """Extract professional skills from resume text using Gemini API with structured output.
     
     Args:
-        cv_text: Raw text extracted from resume
+        text: Raw text extracted from resume
         
     Returns:
         list: List of extracted skill strings (lowercase, cleaned)
-        
-    Raises:
-        Exception: If API call fails
     """
-    if not cv_text or not cv_text.strip():
+    # Fallback / Content Processing Guard: Check for empty text
+    if not text or not text.strip():
+        logger.warning("Empty text passed to skill extraction.")
         return []
-    
-    prompt = f"""
-    You are an expert HR recruiter. Extract a list of professional skills from the following CV text.
-    Return ONLY a comma-separated list of skills. 
-    Example: Python, Project Management, SQL, Public Speaking.
-    
-    CV Text:
-    {cv_text[:5000]}
-    """
-    
+
     try:
-        response = model.generate_content(prompt)
-        response_text = getattr(response, 'text', None)
+        # Initialization using the modern SDK client
+        client = genai.Client(api_key=settings.GEMINI_API_KEY)
 
-        if not response_text:
-            raise ValueError("Gemini returned an empty response. Check your API key and service availability.")
+        prompt = f"Analyze the following resume text and extract a clean list of technical and soft skills: {text}"
 
-        response_text = response_text.strip()
-        if not response_text:
-            raise ValueError("Gemini returned empty text. Check the request format or API response.")
+        # Request structured JSON matching our Pydantic schema
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',  # Leveraging the modern, stable flash model
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema=SkillsInventory,
+                temperature=0.1,  # Low temperature for factual consistency
+            ),
+        )
 
-        # Parse response - handle various formats
-        # Remove common list markers (numbers, bullets)
-        cleaned = re.sub(r'^[\d\.\-\*\•\s]+', '', response_text, flags=re.MULTILINE)
-        
-        # Split by comma, newline, or semicolon
-        skills_list = re.split(r'[\,\n;]', cleaned)
-        
-        # Clean each skill: strip whitespace, lowercase, remove empty strings
-        skills_list = [
-            s.strip().lower() 
-            for s in skills_list 
-            if s.strip() and len(s.strip()) > 0 and len(s.strip()) < 50
-        ]
-        
-        if not skills_list:
-            raise ValueError(f"Gemini did not return extractable skills. Response was: {response_text[:200]}")
+        # Safely parse data structured natively by the SDK configuration
+        structured_data = SkillsInventory.model_validate_json(response.text)
+        return [skill.strip().lower() for skill in structured_data.skills]
 
-        # Remove duplicates while preserving order
-        seen = set()
-        unique_skills = []
-        for skill in skills_list:
-            if skill not in seen:
-                seen.add(skill)
-                unique_skills.append(skill)
-        
-        return unique_skills[:50]  # Limit to 50 skills to prevent storage issues
-        
     except Exception as e:
-        print(f"Error extracting skills with Gemini: {e}")
-        raise
+        # API Failure Handling: Log the error safely and return a clear fallback
+        logger.error(f"Gemini API Skill Extraction Failed: {str(e)}")
+        return []  # Safe fallback so your entire user view doesn't throw a 500 error
