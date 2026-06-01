@@ -9,7 +9,7 @@ class employee_account (models.Model):
     name = models.CharField(max_length=100)
     surname = models.CharField(max_length=100)
     username = models.CharField(max_length=100, unique=True)
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True, blank=True, null=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
     IS_HR = 'HR'

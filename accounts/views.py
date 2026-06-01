@@ -3,15 +3,16 @@ import json
 import logging
 import os
 
+from django.http import Http404, FileResponse
 import fitz
 from docx import Document
-from django.contrib.auth import login
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied, ValidationError
 from django.db import transaction
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 
 from . import skills_extraction
@@ -28,9 +29,25 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            employee_account.objects.create(user=user)
-            login(request, user)
-            return redirect('create_employee_profile')
+            employee_account.objects.create(
+                user=user,
+                username=user.username,
+                email=user.email or None,
+                name=user.first_name or '',
+                surname=user.last_name or ''
+            )
+            authenticated_user = authenticate(
+                request,
+                username=form.cleaned_data['username'],
+                password=form.cleaned_data['password1']
+            )
+            if authenticated_user is not None:
+                login(request, authenticated_user)
+                return redirect('create_employee_profile')
+            return render(request, 'accounts/signup.html', {
+                'form': form,
+                'error': 'Authentication failed after signup. Please log in manually.'
+            })
     else:
         form = UserCreationForm()
 
@@ -207,10 +224,7 @@ def take_survey(request):
             profile.target_relational = relational
             profile.target_experimental = experimental
             profile.save()
-            return render(request, 'accounts/take_survey.html', {
-                'form': form,
-                'success': 'Survey completed successfully! Your cognitive profile has been saved.'
-            })
+            return redirect('employee_profile')
     else:
         form = HBIForm()  # Show blank form on GET
 
@@ -373,7 +387,7 @@ class JobMatchView(LoginRequiredMixin, View):
 # A simple View to handle the 'Apply' action
 class ApplyJobView(LoginRequiredMixin, View):
     def post(self, request, job_id):
-        job = Job.objects.get(id=job_id)
+        job = get_object_or_404(Job, id=job_id)
         employee = request.user.employee_account
         
         # Check if already applied
@@ -385,4 +399,26 @@ class ApplyJobView(LoginRequiredMixin, View):
         
         return render(request, 'accounts/apply_success.html', {'job': job, 'message': 'Application submitted successfully!'})
     
-#mimic the engine
+#TODO: improve the security of the resume download by ensuring that only authorized users can access the resume files, and that the files are served securely without exposing the file system structure. Consider using Django's FileResponse to serve the files and implementing proper access controls to prevent unauthorized access.
+class SecureResumeDownloadView(LoginRequiredMixin, View):
+    def get(self, request, account_id):
+        try:
+            # Fetch the requested profile
+            emp_acc = get_object_or_404(employee_account, id=account_id)
+            
+            # --- AUTHORIZATION RULE LAYER ---
+            # Check if the requester is the owner OR an authorized HR recruiter
+            is_owner = request.user == emp_acc.user
+            is_hr = getattr(request.user, 'employee_account', None) and request.user.employee_account.role == 'HR'
+            
+            if not (is_owner or is_hr):
+                raise Http404("You do not have permission to view this resume.")
+                
+            if not emp_acc.resume:
+                raise Http404("No resume uploaded.")
+
+            # Open and serve the file securely from the protected directory
+            return FileResponse(emp_acc.resume.open('rb'), content_type='application/pdf')
+
+        except employee_account.DoesNotExist:
+            raise Http404("Profile not found.")
