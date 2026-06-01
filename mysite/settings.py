@@ -12,8 +12,17 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 import os
+import environ
 from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
+
+env = environ.Env(DEBUG=(bool, False))
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))  # Read .env file
+
 
 # Gemini API key from environment variable
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
@@ -26,21 +35,40 @@ if not GEMINI_API_KEY:
     )
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-pye69)0wv#)t9r3=mzu%$(rkk$vd%-&%h0donlv8i7+xz#4s$l'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
+if DEBUG:
+    # In local DEBUG mode allow all hosts to avoid host/CSRF 400 errors during development.
+    ALLOWED_HOSTS = ['*']
+    CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://127.0.0.1:8000']
+else:
+    ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1', 'localhost:8000', '127.0.0.1:8000'])
 
+    CSRF_TRUSTED_ORIGINS = [
+        'http://localhost:8000',
+        'http://127.0.0.1:8000',
+        'http://*.onrender.com',
+        'https://*.onrender.com',
+    ]
+
+    # Production security hardening
+    SECURE_SSL_REDIRECT = True
+    SECURE_HSTS_SECONDS = 31536000  # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_HTTPONLY = True
+    CSRF_COOKIE_HTTPONLY = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    X_FRAME_OPTIONS = 'DENY'
 
 # Application definition
 
@@ -54,16 +82,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jobs',
     'accounts',
+    'axes',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'axes.middleware.AxesMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -132,6 +163,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]  
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+## Rate Limiting for Login Attempts with django-axes
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'axes.backends.AxesBackend', # Keeps track of failed hits
+]
+
+AXES_FAILURE_LIMIT = 5            # Lockout after 5 bad tries
+AXES_COOLOFF_TIME = 0.5           # Lockout lasts for 30 minutes
+AXES_LOCKOUT_TEMPLATE = 'accounts/lockout.html' # Optional: show a nice error page
+
 
 LOGIN_REDIRECT_URL = 'employee_profile'  # Redirect to the survey page after login
 LOGOUT_REDIRECT_URL = 'accounts/login'  # Redirect to the login page after logout
