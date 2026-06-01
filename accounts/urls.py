@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-#from .views import EmployeeProfileView
+from .views import SecureResumeDownloadView
 
 urlpatterns = [
     path('signup/', views.signup, name='signup'),
@@ -15,5 +15,6 @@ urlpatterns = [
     path('hr-dashboard/', views.hr_dashboard, name='hr_dashboard'),
     path('apply/<int:job_id>/', views.ApplyJobView.as_view(), name='apply_to_job'),
     path('upload/', views.ResumeUploadView.as_view(), name='upload_resume'),
-    
+    path('resumes/download/<int:account_id>/', SecureResumeDownloadView.as_view(), name='download_resume'),
+
     ]
