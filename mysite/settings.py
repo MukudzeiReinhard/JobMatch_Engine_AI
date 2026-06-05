@@ -96,7 +96,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #axes.middleware.AxesMiddleware',
+    'axes.middleware.AxesMiddleware',
 ]
 
 #CACHE_MIDDLEWARE_ALIAS = 'default'
@@ -126,11 +126,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    # 1. Keep your default pointing to SQLite locally
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'LOCATION': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL')
+    )
 }
 
 
