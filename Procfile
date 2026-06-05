@@ -1,2 +1,2 @@
 web: gunicorn mysite.wsgi --log-file -
-worker: celery -A mysite worker --loglevel=info
+worker: gunicorn mysite.wsgi --log-file - & celery -A mysite worker --loglevel=info
