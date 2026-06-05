@@ -26,7 +26,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),  # Include built-in auth URLs
     path('accounts/', include('accounts.urls')),
     path('jobs/', include('jobs.urls')),
-    path('', RedirectView.as_view(url='/login/'), permanent=False),  # Redirect root URL to login page
+    path('', RedirectView.as_view(url='/login/', permanent=False)),  # Redirect root URL to login page
 ]
 
 User = get_user_model()
