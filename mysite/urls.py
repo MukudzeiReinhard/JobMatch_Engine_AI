@@ -14,12 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+import os
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
 from django.contrib.auth import get_user_model
 from django.db import connection
+from django.core.management import call_command
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -67,4 +68,25 @@ def run_production_maintenance():
 
 # Trigger the script execution right on server startup
 run_production_maintenance()
+# ==============================================================================
+def inject_production_fixtures():
+    try:
+        # Define the path to your data file inside the Render container
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        fixture_path = os.path.join(base_dir, 'datamigration.json')
+        
+        if os.path.exists(fixture_path):
+            print("🟢 Found datamigration.json. Initiating server-side data injection...")
+            
+            # Programmatically execute 'loaddata' natively inside the cloud environment
+            call_command('loaddata', fixture_path)
+            
+            print("🟢 SUCCESS: All local models, job matrices, and profiles injected flawlessly!")
+        else:
+            print("🟡 Warning: datamigration.json not found in the root directory.")
+    except Exception as e:
+        print(f"🔴 Cloud data injection failed: {e}")
+
+# Run the data injector on startup
+inject_production_fixtures()
 # ==============================================================================

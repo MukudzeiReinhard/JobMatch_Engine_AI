@@ -6,4 +6,3 @@ db.sqlite3
 .env
 media/
 resumes/
-datamigration.json
