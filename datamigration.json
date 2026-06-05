@@ -1,1318 +1,480 @@
 [
 {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-        "action_time": "2026-03-27T16:58:13.735Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "1",
-        "object_repr": "python",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-        "action_time": "2026-03-27T16:58:51.109Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "1",
-        "object_repr": "python",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-        "action_time": "2026-03-27T16:59:10.097Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "2",
-        "object_repr": "sql",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-        "action_time": "2026-03-27T16:59:45.244Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "3",
-        "object_repr": "statistics",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-        "action_time": "2026-03-27T17:00:09.167Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "4",
-        "object_repr": "machine learning",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-        "action_time": "2026-03-27T17:02:54.405Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "1",
-        "object_repr": "e",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2026-03-27T17:03:08.564Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "1",
-        "object_repr": "Engineering",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-        "action_time": "2026-03-27T17:03:27.206Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "1",
-        "object_repr": "Data Scientist",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (1)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (4)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-        "action_time": "2026-03-27T17:05:02.802Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "2",
-        "object_repr": "Human resources",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2026-03-27T17:05:42.947Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "5",
-        "object_repr": "recruitment",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-        "action_time": "2026-03-27T17:06:10.089Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "6",
-        "object_repr": "labor law",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2026-03-27T17:06:45.541Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "7",
-        "object_repr": "communication and mediation",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-        "action_time": "2026-03-27T17:07:01.943Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "7",
-        "object_repr": "communication",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-        "action_time": "2026-03-27T17:07:13.327Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "8",
-        "object_repr": "mediation",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-        "action_time": "2026-03-27T17:07:29.299Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "2",
-        "object_repr": "Human resources",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 16,
-    "fields": {
-        "action_time": "2026-03-27T17:07:37.512Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "2",
-        "object_repr": "HR Manager",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (6)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (7)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (8)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 17,
-    "fields": {
-        "action_time": "2026-03-27T17:09:37.386Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "3",
-        "object_repr": "R&D / Creative",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 18,
-    "fields": {
-        "action_time": "2026-03-27T17:10:19.353Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "9",
-        "object_repr": "Adobe Suite",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 19,
-    "fields": {
-        "action_time": "2026-03-27T17:10:50.555Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "10",
-        "object_repr": "Strategy",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 20,
-    "fields": {
-        "action_time": "2026-03-27T17:11:17.899Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "11",
-        "object_repr": "Branding",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 21,
-    "fields": {
-        "action_time": "2026-03-27T17:11:46.951Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "12",
-        "object_repr": "Copywriting",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 22,
-    "fields": {
-        "action_time": "2026-03-27T17:11:55.977Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "3",
-        "object_repr": "Creative Director",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (9)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (10)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (11)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (12)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 23,
-    "fields": {
-        "action_time": "2026-03-27T17:14:10.130Z",
-        "user": 2,
-        "content_type": 7,
-        "object_id": "4",
-        "object_repr": "Finance",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 24,
-    "fields": {
-        "action_time": "2026-03-27T17:15:02.501Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "13",
-        "object_repr": "Excel",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 25,
-    "fields": {
-        "action_time": "2026-03-27T17:15:35.283Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "14",
-        "object_repr": "Accounting",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 26,
-    "fields": {
-        "action_time": "2026-03-27T17:15:58.796Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "15",
-        "object_repr": "Risk Assessment",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 27,
-    "fields": {
-        "action_time": "2026-03-27T17:16:17.139Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "16",
-        "object_repr": "Tax Law",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 28,
-    "fields": {
-        "action_time": "2026-03-27T17:16:32.627Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "4",
-        "object_repr": "Financial Auditor",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (13)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (14)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (15)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (16)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 29,
-    "fields": {
-        "action_time": "2026-03-27T17:18:01.928Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "17",
-        "object_repr": "AWS",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 30,
-    "fields": {
-        "action_time": "2026-03-27T17:18:19.118Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "18",
-        "object_repr": "Docker",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 31,
-    "fields": {
-        "action_time": "2026-03-27T17:18:29.271Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "5",
-        "object_repr": "DevOps Engineer",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (17)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (18)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (19)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 32,
-    "fields": {
-        "action_time": "2026-03-27T17:20:24.916Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "6",
-        "object_repr": "Data Auditor",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (20)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (21)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (22)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 33,
-    "fields": {
-        "action_time": "2026-04-20T05:37:10.427Z",
-        "user": 2,
-        "content_type": 2,
-        "object_id": "1",
-        "object_repr": "Admins",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 34,
-    "fields": {
-        "action_time": "2026-04-20T05:51:58.774Z",
-        "user": 2,
-        "content_type": 2,
-        "object_id": "2",
-        "object_repr": "HR Recruiters",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 35,
-    "fields": {
-        "action_time": "2026-05-02T07:54:45.118Z",
-        "user": 2,
-        "content_type": 11,
-        "object_id": "4",
-        "object_repr": "muki",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 36,
-    "fields": {
-        "action_time": "2026-05-19T18:48:57.526Z",
-        "user": 2,
-        "content_type": 2,
-        "object_id": "2",
-        "object_repr": "HR Recruiters",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 37,
-    "fields": {
-        "action_time": "2026-05-19T18:52:02.738Z",
-        "user": 2,
-        "content_type": 2,
-        "object_id": "3",
-        "object_repr": "Employee",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 38,
-    "fields": {
-        "action_time": "2026-05-24T16:42:01.504Z",
-        "user": 2,
-        "content_type": 10,
-        "object_id": "19",
-        "object_repr": "cloud infrastructure",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 39,
-    "fields": {
-        "action_time": "2026-05-24T16:43:00.705Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "7",
-        "object_repr": "Data Engineer",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - python (Importance: 4)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - sql (Importance: 5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - cloud infrastructure (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - machine learning (Importance: 2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - Docker (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - statistics (Importance: 3)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 40,
-    "fields": {
-        "action_time": "2026-05-24T16:52:20.197Z",
-        "user": 2,
-        "content_type": 8,
-        "object_id": "7",
-        "object_repr": "Data Engineer",
-        "action_flag": 2,
-        "change_message": "[]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 41,
-    "fields": {
-        "action_time": "2026-06-03T05:46:17.016Z",
-        "user": 2,
-        "content_type": 4,
-        "object_id": "5",
-        "object_repr": "mck",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 42,
-    "fields": {
-        "action_time": "2026-06-03T05:55:35.602Z",
-        "user": 2,
-        "content_type": 4,
-        "object_id": "5",
-        "object_repr": "mck",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"User permissions\"]}}]"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-        "name": "Can add log entry",
-        "content_type": 1,
-        "codename": "add_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-        "name": "Can change log entry",
-        "content_type": 1,
-        "codename": "change_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-        "name": "Can delete log entry",
-        "content_type": 1,
-        "codename": "delete_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-        "name": "Can view log entry",
-        "content_type": 1,
-        "codename": "view_logentry"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-        "name": "Can add permission",
-        "content_type": 3,
-        "codename": "add_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-        "name": "Can change permission",
-        "content_type": 3,
-        "codename": "change_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-        "name": "Can delete permission",
-        "content_type": 3,
-        "codename": "delete_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-        "name": "Can view permission",
-        "content_type": 3,
-        "codename": "view_permission"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-        "name": "Can add group",
-        "content_type": 2,
-        "codename": "add_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-        "name": "Can change group",
-        "content_type": 2,
-        "codename": "change_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-        "name": "Can delete group",
-        "content_type": 2,
-        "codename": "delete_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-        "name": "Can view group",
-        "content_type": 2,
-        "codename": "view_group"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-        "name": "Can add user",
-        "content_type": 4,
-        "codename": "add_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-        "name": "Can change user",
-        "content_type": 4,
-        "codename": "change_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-        "name": "Can delete user",
-        "content_type": 4,
-        "codename": "delete_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-        "name": "Can view user",
-        "content_type": 4,
-        "codename": "view_user"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-        "name": "Can add content type",
-        "content_type": 5,
-        "codename": "add_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-        "name": "Can change content type",
-        "content_type": 5,
-        "codename": "change_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-        "name": "Can delete content type",
-        "content_type": 5,
-        "codename": "delete_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-        "name": "Can view content type",
-        "content_type": 5,
-        "codename": "view_contenttype"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-        "name": "Can add session",
-        "content_type": 6,
-        "codename": "add_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-        "name": "Can change session",
-        "content_type": 6,
-        "codename": "change_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-        "name": "Can delete session",
-        "content_type": 6,
-        "codename": "delete_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-        "name": "Can view session",
-        "content_type": 6,
-        "codename": "view_session"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-        "name": "Can add department",
-        "content_type": 7,
-        "codename": "add_department"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-        "name": "Can change department",
-        "content_type": 7,
-        "codename": "change_department"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-        "name": "Can delete department",
-        "content_type": 7,
-        "codename": "delete_department"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-        "name": "Can view department",
-        "content_type": 7,
-        "codename": "view_department"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 29,
-    "fields": {
-        "name": "Can add job",
-        "content_type": 8,
-        "codename": "add_job"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 30,
-    "fields": {
-        "name": "Can change job",
-        "content_type": 8,
-        "codename": "change_job"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 31,
-    "fields": {
-        "name": "Can delete job",
-        "content_type": 8,
-        "codename": "delete_job"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 32,
-    "fields": {
-        "name": "Can view job",
-        "content_type": 8,
-        "codename": "view_job"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 33,
-    "fields": {
-        "name": "Can add skill",
-        "content_type": 10,
-        "codename": "add_skill"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 34,
-    "fields": {
-        "name": "Can change skill",
-        "content_type": 10,
-        "codename": "change_skill"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 35,
-    "fields": {
-        "name": "Can delete skill",
-        "content_type": 10,
-        "codename": "delete_skill"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 36,
-    "fields": {
-        "name": "Can view skill",
-        "content_type": 10,
-        "codename": "view_skill"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 37,
-    "fields": {
-        "name": "Can add job skill requirement",
-        "content_type": 9,
-        "codename": "add_jobskillrequirement"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 38,
-    "fields": {
-        "name": "Can change job skill requirement",
-        "content_type": 9,
-        "codename": "change_jobskillrequirement"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 39,
-    "fields": {
-        "name": "Can delete job skill requirement",
-        "content_type": 9,
-        "codename": "delete_jobskillrequirement"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 40,
-    "fields": {
-        "name": "Can view job skill requirement",
-        "content_type": 9,
-        "codename": "view_jobskillrequirement"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 41,
-    "fields": {
-        "name": "Can add employee_account",
-        "content_type": 11,
-        "codename": "add_employee_account"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 42,
-    "fields": {
-        "name": "Can change employee_account",
-        "content_type": 11,
-        "codename": "change_employee_account"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 43,
-    "fields": {
-        "name": "Can delete employee_account",
-        "content_type": 11,
-        "codename": "delete_employee_account"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 44,
-    "fields": {
-        "name": "Can view employee_account",
-        "content_type": 11,
-        "codename": "view_employee_account"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 45,
-    "fields": {
-        "name": "Can add user profile",
-        "content_type": 12,
-        "codename": "add_userprofile"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 46,
-    "fields": {
-        "name": "Can change user profile",
-        "content_type": 12,
-        "codename": "change_userprofile"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 47,
-    "fields": {
-        "name": "Can delete user profile",
-        "content_type": 12,
-        "codename": "delete_userprofile"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 48,
-    "fields": {
-        "name": "Can view user profile",
-        "content_type": 12,
-        "codename": "view_userprofile"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 49,
-    "fields": {
-        "name": "Can add job employee compatibility",
-        "content_type": 13,
-        "codename": "add_jobemployeecompatibility"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 50,
-    "fields": {
-        "name": "Can change job employee compatibility",
-        "content_type": 13,
-        "codename": "change_jobemployeecompatibility"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 51,
-    "fields": {
-        "name": "Can delete job employee compatibility",
-        "content_type": 13,
-        "codename": "delete_jobemployeecompatibility"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 52,
-    "fields": {
-        "name": "Can view job employee compatibility",
-        "content_type": 13,
-        "codename": "view_jobemployeecompatibility"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 53,
-    "fields": {
-        "name": "Can add job applications",
-        "content_type": 14,
-        "codename": "add_jobapplications"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 54,
-    "fields": {
-        "name": "Can change job applications",
-        "content_type": 14,
-        "codename": "change_jobapplications"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 55,
-    "fields": {
-        "name": "Can delete job applications",
-        "content_type": 14,
-        "codename": "delete_jobapplications"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 56,
-    "fields": {
-        "name": "Can view job applications",
-        "content_type": 14,
-        "codename": "view_jobapplications"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 57,
-    "fields": {
-        "name": "Can add access attempt",
-        "content_type": 15,
-        "codename": "add_accessattempt"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 58,
-    "fields": {
-        "name": "Can change access attempt",
-        "content_type": 15,
-        "codename": "change_accessattempt"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 59,
-    "fields": {
-        "name": "Can delete access attempt",
-        "content_type": 15,
-        "codename": "delete_accessattempt"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 60,
-    "fields": {
-        "name": "Can view access attempt",
-        "content_type": 15,
-        "codename": "view_accessattempt"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 61,
-    "fields": {
-        "name": "Can add access log",
-        "content_type": 18,
-        "codename": "add_accesslog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 62,
-    "fields": {
-        "name": "Can change access log",
-        "content_type": 18,
-        "codename": "change_accesslog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 63,
-    "fields": {
-        "name": "Can delete access log",
-        "content_type": 18,
-        "codename": "delete_accesslog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 64,
-    "fields": {
-        "name": "Can view access log",
-        "content_type": 18,
-        "codename": "view_accesslog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 65,
-    "fields": {
-        "name": "Can add access failure",
-        "content_type": 17,
-        "codename": "add_accessfailurelog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 66,
-    "fields": {
-        "name": "Can change access failure",
-        "content_type": 17,
-        "codename": "change_accessfailurelog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 67,
-    "fields": {
-        "name": "Can delete access failure",
-        "content_type": 17,
-        "codename": "delete_accessfailurelog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 68,
-    "fields": {
-        "name": "Can view access failure",
-        "content_type": 17,
-        "codename": "view_accessfailurelog"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 69,
-    "fields": {
-        "name": "Can add access attempt expiration",
-        "content_type": 16,
-        "codename": "add_accessattemptexpiration"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 70,
-    "fields": {
-        "name": "Can change access attempt expiration",
-        "content_type": 16,
-        "codename": "change_accessattemptexpiration"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 71,
-    "fields": {
-        "name": "Can delete access attempt expiration",
-        "content_type": 16,
-        "codename": "delete_accessattemptexpiration"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 72,
-    "fields": {
-        "name": "Can view access attempt expiration",
-        "content_type": 16,
-        "codename": "view_accessattemptexpiration"
-    }
-},
-{
     "model": "auth.group",
-    "pk": 1,
     "fields": {
         "name": "Admins",
         "permissions": [
-            41,
-            42,
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            1,
-            2,
-            3,
-            4,
-            9,
-            10,
-            11,
-            12,
-            5,
-            6,
-            7,
-            8,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            53,
-            54,
-            55,
-            56,
-            49,
-            50,
-            51,
-            52,
-            37,
-            38,
-            39,
-            40,
-            33,
-            34,
-            35,
-            36,
-            21,
-            22,
-            23,
-            24
+            [
+                "add_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "change_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "delete_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "view_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "add_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "change_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "delete_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "view_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "view_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_group",
+                "auth",
+                "group"
+            ],
+            [
+                "change_group",
+                "auth",
+                "group"
+            ],
+            [
+                "delete_group",
+                "auth",
+                "group"
+            ],
+            [
+                "view_group",
+                "auth",
+                "group"
+            ],
+            [
+                "add_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "change_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "delete_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "view_permission",
+                "auth",
+                "permission"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "change_user",
+                "auth",
+                "user"
+            ],
+            [
+                "delete_user",
+                "auth",
+                "user"
+            ],
+            [
+                "view_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "change_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "delete_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "view_contenttype",
+                "contenttypes",
+                "contenttype"
+            ],
+            [
+                "add_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "change_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "delete_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "view_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "add_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "change_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "delete_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "view_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "add_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "change_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "delete_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "view_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "add_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "change_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "delete_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "view_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "add_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "change_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "delete_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "view_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "add_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "change_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "delete_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "view_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "add_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "change_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "delete_session",
+                "sessions",
+                "session"
+            ],
+            [
+                "view_session",
+                "sessions",
+                "session"
+            ]
         ]
     }
 },
 {
     "model": "auth.group",
-    "pk": 2,
     "fields": {
         "name": "HR Recruiters",
         "permissions": [
-            41,
-            44,
-            45,
-            48,
-            1,
-            2,
-            3,
-            4,
-            13,
-            16,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            53,
-            56,
-            49,
-            50,
-            51,
-            52,
-            37,
-            38,
-            39,
-            40,
-            33,
-            34,
-            35,
-            36
+            [
+                "add_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "view_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "add_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "view_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "add_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "change_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "delete_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "view_logentry",
+                "admin",
+                "logentry"
+            ],
+            [
+                "add_user",
+                "auth",
+                "user"
+            ],
+            [
+                "view_user",
+                "auth",
+                "user"
+            ],
+            [
+                "add_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "change_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "delete_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "view_department",
+                "jobs",
+                "department"
+            ],
+            [
+                "add_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "change_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "delete_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "view_job",
+                "jobs",
+                "job"
+            ],
+            [
+                "add_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "view_jobapplications",
+                "jobs",
+                "jobapplications"
+            ],
+            [
+                "add_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "change_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "delete_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "view_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "add_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "change_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "delete_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "view_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "add_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "change_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "delete_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "view_skill",
+                "jobs",
+                "skill"
+            ]
         ]
     }
 },
 {
     "model": "auth.group",
-    "pk": 3,
     "fields": {
         "name": "Employee",
         "permissions": [
-            41,
-            45
+            [
+                "add_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "add_userprofile",
+                "accounts",
+                "userprofile"
+            ]
         ]
     }
 },
 {
     "model": "auth.user",
-    "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$1200000$R8CiEqwFrNM6kBwgqIki4e$jDDkN8+a3FlyErC+rphMo1HplqzAqFJ4K5Ed4HN2FeA=",
         "last_login": "2026-05-24T16:53:10.919Z",
@@ -1330,7 +492,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$1200000$cv8oLu2G3ljy1VQPIPaNX5$E69yM5vBOjlCg3eK3h+NBhf9SPU6p3unoTLTijzOHjA=",
         "last_login": "2026-06-05T02:45:04.260Z",
@@ -1348,7 +509,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$1200000$kutn2TIgI7sktqY10i1HTM$eaPk175JGdfPqLCAviIP/FnclUjkgzhcZ4o65S/WOuo=",
         "last_login": "2026-06-05T02:44:31.778Z",
@@ -1366,7 +526,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 4,
     "fields": {
         "password": "pbkdf2_sha256$1200000$ZwKU6ddrSXDeOpshilXr5e$R90n/JEXd2RcZ+ekc9NOWec8PhtqGtdiWr29RqOFqPY=",
         "last_login": "2026-06-05T02:24:25.656Z",
@@ -1384,7 +543,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 5,
     "fields": {
         "password": "pbkdf2_sha256$1200000$77VOpIr93wMhaumXebUxfC$5vZ+BvguEoEV6SbXApfW479l03zZr9DMVXYklaj4c6E=",
         "last_login": "2026-06-03T05:56:20.793Z",
@@ -1397,31 +555,96 @@
         "is_active": true,
         "date_joined": "2026-05-02T01:54:30Z",
         "groups": [
-            2
+            [
+                "HR Recruiters"
+            ]
         ],
         "user_permissions": [
-            43,
-            44,
-            45,
-            46,
-            47,
-            48,
-            51,
-            52,
-            37,
-            38,
-            39,
-            40,
-            33,
-            34,
-            35,
-            36
+            [
+                "delete_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "view_employee_account",
+                "accounts",
+                "employee_account"
+            ],
+            [
+                "add_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "change_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "delete_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "view_userprofile",
+                "accounts",
+                "userprofile"
+            ],
+            [
+                "delete_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "view_jobemployeecompatibility",
+                "jobs",
+                "jobemployeecompatibility"
+            ],
+            [
+                "add_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "change_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "delete_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "view_jobskillrequirement",
+                "jobs",
+                "jobskillrequirement"
+            ],
+            [
+                "add_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "change_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "delete_skill",
+                "jobs",
+                "skill"
+            ],
+            [
+                "view_skill",
+                "jobs",
+                "skill"
+            ]
         ]
     }
 },
 {
     "model": "auth.user",
-    "pk": 6,
     "fields": {
         "password": "pbkdf2_sha256$1200000$uqTGtzjV8Wor7h8vUxpGUQ$YcubgSd8YCsh0MVQZzgxfG/BR12ZwTMYKLCzZ7iOM34=",
         "last_login": "2026-06-03T05:41:28.197Z",
@@ -1439,7 +662,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 7,
     "fields": {
         "password": "pbkdf2_sha256$1200000$F6n68iY6NIQWPu44JNXAAX$DkN2zZTOL3wkW1uBJRi1i9zhmS8ZwxqYvwrxarXdJew=",
         "last_login": "2026-06-01T10:53:51.154Z",
@@ -1457,7 +679,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 8,
     "fields": {
         "password": "pbkdf2_sha256$1200000$IyNmZxjdWdRbinNOWrcdDw$N8n8JCF3Uejl7dvbp73YC2EsqN9ZaUJKMf28/MDn1Vw=",
         "last_login": null,
@@ -1475,7 +696,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$1200000$amXC0opM3MqcWtMvV12hSF$9yFmci9n8lDwfl5XcXPZdfo+7zo0i60wfQ3FLXHfuto=",
         "last_login": "2026-06-01T11:04:14.761Z",
@@ -1493,7 +713,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 10,
     "fields": {
         "password": "pbkdf2_sha256$1200000$t64QQ3IJQdOVpwK5U5oAC7$PzJ9Y2GRo4EIFFownQfVEhq8IZGjalKl2sq+tJvsMWI=",
         "last_login": null,
@@ -1511,7 +730,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 11,
     "fields": {
         "password": "pbkdf2_sha256$1200000$Pne9KBtmi5ASnoAbSzcIqc$UFQjTkp9kBlLi4HoVRHDD5TEHBusrq+qyNXascXxywA=",
         "last_login": null,
@@ -1529,7 +747,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 12,
     "fields": {
         "password": "pbkdf2_sha256$1200000$wYrezhU5xjBx13CHGr4aRd$csmBngxUMRHQwV9pIYoZPiZjoZNqi485pizBBOku+14=",
         "last_login": null,
@@ -1547,7 +764,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 13,
     "fields": {
         "password": "pbkdf2_sha256$1200000$eM5cVwG0i6qXLg290O8YPT$f5/x0GyXjAkL/N4Qsd7W9JMjm9mi2TdAy+MvSXXPUO8=",
         "last_login": null,
@@ -1565,7 +781,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 14,
     "fields": {
         "password": "pbkdf2_sha256$1200000$mugfznvAWvzOyW8vmiBW3o$chMCGT1iTmeii0NS00qUIufgbWoOfNaoaU4j3Z4mzbI=",
         "last_login": null,
@@ -1583,7 +798,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 15,
     "fields": {
         "password": "pbkdf2_sha256$1200000$hErFSxVkX4IzgQZkzg1ox8$PMee9zTjWRKdOZzqF0EC5ZuJfrJFTpZUZ2jqSsh6VYc=",
         "last_login": null,
@@ -1601,7 +815,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 16,
     "fields": {
         "password": "pbkdf2_sha256$1200000$q8wJCPv57UACZeg3Ks7ZCy$m/Shhqh8ZbRZX9noqhJUlYk0roAVCrK1njdrH8yWk34=",
         "last_login": null,
@@ -1619,7 +832,6 @@
 },
 {
     "model": "auth.user",
-    "pk": 17,
     "fields": {
         "password": "pbkdf2_sha256$1200000$kteHtEbLByQLFfYh8OYrK0$251KE7kE+og8r3h7hIc8cVaHE/PbQwLg/YxVfIzJ9VQ=",
         "last_login": "2026-06-01T12:20:24.799Z",
@@ -1637,9 +849,8 @@
 },
 {
     "model": "auth.user",
-    "pk": 19,
     "fields": {
-        "password": "pbkdf2_sha256$1200000$RaD5Wu5lRYpJv0pzOKEbV5$8uh2MNgbJbjGRxKNlaVeC8GMc2Rjo0obhK4iX66WOH8=",
+        "password": "pbkdf2_sha256$1200000$dHWRBfHULpeH40oiuXiGfd$TYDARkbNPXKUnBTJUK6m2QTW0AtDlz51hrkaOinoYl4=",
         "last_login": null,
         "is_superuser": true,
         "username": "masteradmin",
@@ -1648,153 +859,9 @@
         "email": "admin@example.com",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2026-06-05T08:59:29.376Z",
+        "date_joined": "2026-06-05T09:10:36.542Z",
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": {
-        "app_label": "admin",
-        "model": "logentry"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": {
-        "app_label": "auth",
-        "model": "group"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": {
-        "app_label": "auth",
-        "model": "permission"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-        "app_label": "auth",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-        "app_label": "contenttypes",
-        "model": "contenttype"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-        "app_label": "sessions",
-        "model": "session"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-        "app_label": "jobs",
-        "model": "department"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": {
-        "app_label": "jobs",
-        "model": "job"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": {
-        "app_label": "jobs",
-        "model": "jobskillrequirement"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": {
-        "app_label": "jobs",
-        "model": "skill"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": {
-        "app_label": "accounts",
-        "model": "employee_account"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": {
-        "app_label": "accounts",
-        "model": "userprofile"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 13,
-    "fields": {
-        "app_label": "jobs",
-        "model": "jobemployeecompatibility"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 14,
-    "fields": {
-        "app_label": "jobs",
-        "model": "jobapplications"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 15,
-    "fields": {
-        "app_label": "axes",
-        "model": "accessattempt"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 16,
-    "fields": {
-        "app_label": "axes",
-        "model": "accessattemptexpiration"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 17,
-    "fields": {
-        "app_label": "axes",
-        "model": "accessfailurelog"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 18,
-    "fields": {
-        "app_label": "axes",
-        "model": "accesslog"
     }
 },
 {
@@ -2876,14 +1943,16 @@
         "surname": "Mbiriri",
         "username": "nene",
         "email": "anesum@gmail.com",
-        "user": 1,
+        "user": [
+            "nene"
+        ],
         "role": "EMPLOYEE",
         "location": "San Francisco, CA",
         "birth_date": "2009-12-02",
         "bio": "4th Year student",
         "resume": "resumes/Geminiapi3.pdf",
         "uploaded_at": null,
-        "cv_text": "• \nName: Mukudzei Zimbabwe \n• \nProfessional Summary: A versatile professional who excels at managing both \ntechnical infrastructure and human capital. Focused on creating efficient workflows \nand maintaining harmonious work environments through clear communication and \nrobust labor law knowledge. \n• \nSkills: Recruitment, Labor Law, Mediation, Communication, Docker, AWS, Python \n(Scripting). \n• \nExperience: \no Operations Assistant (Primary School): Managed administrative support \nand staff coordination, ensuring all daily activities aligned with institutional \nregulations. \no Junior Systems Admin: Implemented Docker containers to streamline school \nmanagement software deployment while handling internal technical support. \n \n",
+        "cv_text": "â€¢ \nName: Mukudzei Zimbabwe \nâ€¢ \nProfessional Summary: A versatile professional who excels at managing both \ntechnical infrastructure and human capital. Focused on creating efficient workflows \nand maintaining harmonious work environments through clear communication and \nrobust labor law knowledge. \nâ€¢ \nSkills: Recruitment, Labor Law, Mediation, Communication, Docker, AWS, Python \n(Scripting). \nâ€¢ \nExperience: \no Operations Assistant (Primary School): Managed administrative support \nand staff coordination, ensuring all daily activities aligned with institutional \nregulations. \no Junior Systems Admin: Implemented Docker containers to streamline school \nmanagement software deployment while handling internal technical support. \n \n",
         "skills_list": "recruitment, labor law, mediation, communication, docker, aws, python (scripting), technical management, human capital management, workflow optimization, efficiency, conflict resolution, teamwork, administrative support, staff coordination, regulatory compliance, operational management, containerization, system implementation, software deployment, system optimization, technical support",
         "target_analytical": 88,
         "target_practical": 80,
@@ -2899,7 +1968,9 @@
         "surname": "Mbiriri",
         "username": "betty",
         "email": "betty@gmail.com",
-        "user": 3,
+        "user": [
+            "betty"
+        ],
         "role": "EMPLOYEE",
         "location": "Chicago, IL",
         "birth_date": "2012-07-09",
@@ -2922,7 +1993,9 @@
         "surname": "Muchemwa",
         "username": "R222906U",
         "email": "aqua@gmail.com",
-        "user": 4,
+        "user": [
+            "R22906U"
+        ],
         "role": "EMPLOYEE",
         "location": "Masvingo",
         "birth_date": "2003-04-21",
@@ -2945,7 +2018,9 @@
         "surname": "Mbiri",
         "username": "muki",
         "email": "reinmchemwa@gmail.com",
-        "user": 5,
+        "user": [
+            "mck"
+        ],
         "role": "HR",
         "location": "Masvingo",
         "birth_date": "2012-07-09",
@@ -2968,14 +2043,16 @@
         "surname": "Mchemwa",
         "username": "mck2",
         "email": "aaa@gmail.com",
-        "user": 6,
+        "user": [
+            "mck2"
+        ],
         "role": "EMPLOYEE",
         "location": "San Francisco, CA",
         "birth_date": "2012-07-09",
         "bio": "3rd year",
         "resume": "resumes/Geminiapi2.pdf",
         "uploaded_at": null,
-        "cv_text": "• \nName: Chipo Harare \n• \nProfessional Summary: Visionary creative lead with a passion for brand storytelling \nand conceptual strategy. Skilled at bridging the gap between artistic vision and market \nrequirements to drive engagement. \n• \nSkills: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Branding Strategy, \nCopywriting, Creative Direction, Digital Marketing. \n• \nExperience: \no Freelance Brand Designer: Developed full visual identities for three \nZimbabwean startups, increasing brand recognition by 40%. \no Content Strategist: Led a cross-functional team to design a social media \ncampaign that integrated high-level strategy with emotional storytelling. \n \n",
+        "cv_text": "â€¢ \nName: Chipo Harare \nâ€¢ \nProfessional Summary: Visionary creative lead with a passion for brand storytelling \nand conceptual strategy. Skilled at bridging the gap between artistic vision and market \nrequirements to drive engagement. \nâ€¢ \nSkills: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Branding Strategy, \nCopywriting, Creative Direction, Digital Marketing. \nâ€¢ \nExperience: \no Freelance Brand Designer: Developed full visual identities for three \nZimbabwean startups, increasing brand recognition by 40%. \no Content Strategist: Led a cross-functional team to design a social media \ncampaign that integrated high-level strategy with emotional storytelling. \n \n",
         "skills_list": "adobe creative suite, photoshop, illustrator, indesign, branding strategy, copywriting, creative direction, digital marketing, brand storytelling, conceptual strategy, artistic vision, market requirements, engagement, visual identities, brand recognition, content strategy, social media campaign, high-level strategy, emotional storytelling",
         "target_analytical": 92,
         "target_practical": 76,
@@ -2991,7 +2068,9 @@
         "surname": "",
         "username": "mukudzei",
         "email": "",
-        "user": 7,
+        "user": [
+            "mukudzei"
+        ],
         "role": "EMPLOYEE",
         "location": "",
         "birth_date": null,
@@ -3014,7 +2093,9 @@
         "surname": "",
         "username": "mmreinhard",
         "email": null,
-        "user": 11,
+        "user": [
+            "mmreinhard"
+        ],
         "role": "EMPLOYEE",
         "location": "",
         "birth_date": null,
@@ -3037,7 +2118,9 @@
         "surname": "",
         "username": "",
         "email": null,
-        "user": 12,
+        "user": [
+            "mreinhardm"
+        ],
         "role": "EMPLOYEE",
         "location": "",
         "birth_date": null,
@@ -3060,7 +2143,9 @@
         "surname": "",
         "username": "qwexty33",
         "email": null,
-        "user": 16,
+        "user": [
+            "qwexty33"
+        ],
         "role": "EMPLOYEE",
         "location": "",
         "birth_date": null,
@@ -3083,7 +2168,9 @@
         "surname": "Mbiri",
         "username": "dr3",
         "email": "muchemwaano@gmail.com",
-        "user": 17,
+        "user": [
+            "dr3"
+        ],
         "role": "EMPLOYEE",
         "location": "Masvingo",
         "birth_date": "2012-07-09",
@@ -3446,6 +2533,762 @@
         "attempt_time": "2026-06-05T02:45:04.242Z",
         "logout_time": null,
         "session_hash": "de22b7d52ee649b5c3f6dc825f2d2ddd96759c815baa5116fead40ba36c85754"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-03-27T16:58:13.735Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "1",
+        "object_repr": "python",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-03-27T16:58:51.109Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "1",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-03-27T16:59:10.097Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "2",
+        "object_repr": "sql",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-03-27T16:59:45.244Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "3",
+        "object_repr": "statistics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-03-27T17:00:09.167Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "4",
+        "object_repr": "machine learning",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-03-27T17:02:54.405Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "1",
+        "object_repr": "e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-03-27T17:03:08.564Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "1",
+        "object_repr": "Engineering",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-03-27T17:03:27.206Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Data Scientist",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (1)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-03-27T17:05:02.802Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "2",
+        "object_repr": "Human resources",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-03-27T17:05:42.947Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "5",
+        "object_repr": "recruitment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-03-27T17:06:10.089Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "6",
+        "object_repr": "labor law",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-03-27T17:06:45.541Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "7",
+        "object_repr": "communication and mediation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-03-27T17:07:01.943Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "7",
+        "object_repr": "communication",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-03-27T17:07:13.327Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "8",
+        "object_repr": "mediation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-03-27T17:07:29.299Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "2",
+        "object_repr": "Human resources",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-03-27T17:07:37.512Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "2",
+        "object_repr": "HR Manager",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (6)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (7)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (8)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-03-27T17:09:37.386Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "3",
+        "object_repr": "R&D / Creative",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-03-27T17:10:19.353Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "9",
+        "object_repr": "Adobe Suite",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-03-27T17:10:50.555Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "10",
+        "object_repr": "Strategy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-03-27T17:11:17.899Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "11",
+        "object_repr": "Branding",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-03-27T17:11:46.951Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "12",
+        "object_repr": "Copywriting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-03-27T17:11:55.977Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "3",
+        "object_repr": "Creative Director",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (9)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (10)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (11)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-03-27T17:14:10.130Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "department"
+        ],
+        "object_id": "4",
+        "object_repr": "Finance",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-03-27T17:15:02.501Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "13",
+        "object_repr": "Excel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-03-27T17:15:35.283Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "14",
+        "object_repr": "Accounting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-03-27T17:15:58.796Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "15",
+        "object_repr": "Risk Assessment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-03-27T17:16:17.139Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "16",
+        "object_repr": "Tax Law",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-03-27T17:16:32.627Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "4",
+        "object_repr": "Financial Auditor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (13)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (14)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (15)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (16)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-03-27T17:18:01.928Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "17",
+        "object_repr": "AWS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-03-27T17:18:19.118Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "18",
+        "object_repr": "Docker",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-03-27T17:18:29.271Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "5",
+        "object_repr": "DevOps Engineer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (17)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (18)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (19)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-03-27T17:20:24.916Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "6",
+        "object_repr": "Data Auditor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (20)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (21)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (22)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-04-20T05:37:10.427Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "Admins",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-04-20T05:51:58.774Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "2",
+        "object_repr": "HR Recruiters",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-05-02T07:54:45.118Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "accounts",
+            "employee_account"
+        ],
+        "object_id": "4",
+        "object_repr": "muki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-05-19T18:48:57.526Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "2",
+        "object_repr": "HR Recruiters",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-05-19T18:52:02.738Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "3",
+        "object_repr": "Employee",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-05-24T16:42:01.504Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "skill"
+        ],
+        "object_id": "19",
+        "object_repr": "cloud infrastructure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-05-24T16:43:00.705Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "7",
+        "object_repr": "Data Engineer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - python (Importance: 4)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - sql (Importance: 5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - cloud infrastructure (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - machine learning (Importance: 2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - Docker (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - statistics (Importance: 3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-05-24T16:52:20.197Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "jobs",
+            "job"
+        ],
+        "object_id": "7",
+        "object_repr": "Data Engineer",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-06-03T05:46:17.016Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "mck",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-06-03T05:55:35.602Z",
+        "user": [
+            "reinhardmuchemwa"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "mck",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"User permissions\"]}}]"
     }
 }
 ]
