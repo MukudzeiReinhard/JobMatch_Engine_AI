@@ -14,11 +14,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-import os
+
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
-from django.contrib.auth import get_user_model
+
 
 
 urlpatterns = [
@@ -29,15 +29,3 @@ urlpatterns = [
     path('', RedirectView.as_view(url='/login/', permanent=False)),  # Redirect root URL to login page
 ]
 
-User = get_user_model()
-# Change these values to what you want your login to be
-admin_username = 'admin'
-admin_email = 'admin@example.com'
-admin_password = 'Reinhard123!' 
-
-try:
-    if not User.objects.filter(username=admin_username).exists():
-        User.objects.create_superuser(admin_username, admin_email, admin_password)
-        print("🟢 Superuser created successfully via boot script!")
-except Exception as e:
-    pass
