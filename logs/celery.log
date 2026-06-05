@@ -1,0 +1,24 @@
+ERROR 2026-06-03 08:29:41,709 redis 19476 17156 Connection to Redis lost: Retry (0/20) now.
+ERROR 2026-06-03 08:29:45,780 redis 19476 17156 Connection to Redis lost: Retry (1/20) in 1.00 second.
+ERROR 2026-06-03 08:29:50,836 redis 19476 17156 Connection to Redis lost: Retry (2/20) in 1.00 second.
+ERROR 2026-06-03 08:29:55,905 redis 19476 17156 Connection to Redis lost: Retry (3/20) in 1.00 second.
+ERROR 2026-06-03 08:30:01,007 redis 19476 17156 Connection to Redis lost: Retry (4/20) in 1.00 second.
+ERROR 2026-06-03 08:30:06,098 redis 19476 17156 Connection to Redis lost: Retry (5/20) in 1.00 second.
+ERROR 2026-06-03 08:30:11,181 redis 19476 17156 Connection to Redis lost: Retry (6/20) in 1.00 second.
+ERROR 2026-06-03 08:30:16,251 redis 19476 17156 Connection to Redis lost: Retry (7/20) in 1.00 second.
+ERROR 2026-06-03 08:30:21,331 redis 19476 17156 Connection to Redis lost: Retry (8/20) in 1.00 second.
+ERROR 2026-06-03 08:30:26,410 redis 19476 17156 Connection to Redis lost: Retry (9/20) in 1.00 second.
+ERROR 2026-06-03 08:30:31,476 redis 19476 17156 Connection to Redis lost: Retry (10/20) in 1.00 second.
+ERROR 2026-06-03 08:30:36,541 redis 19476 17156 Connection to Redis lost: Retry (11/20) in 1.00 second.
+ERROR 2026-06-03 08:30:41,640 redis 19476 17156 Connection to Redis lost: Retry (12/20) in 1.00 second.
+ERROR 2026-06-03 08:30:46,705 redis 19476 17156 Connection to Redis lost: Retry (13/20) in 1.00 second.
+ERROR 2026-06-03 08:30:51,758 redis 19476 17156 Connection to Redis lost: Retry (14/20) in 1.00 second.
+ERROR 2026-06-03 08:30:56,838 redis 19476 17156 Connection to Redis lost: Retry (15/20) in 1.00 second.
+ERROR 2026-06-03 08:31:01,916 redis 19476 17156 Connection to Redis lost: Retry (16/20) in 1.00 second.
+ERROR 2026-06-03 08:31:06,970 redis 19476 17156 Connection to Redis lost: Retry (17/20) in 1.00 second.
+ERROR 2026-06-03 08:31:12,042 redis 19476 17156 Connection to Redis lost: Retry (18/20) in 1.00 second.
+ERROR 2026-06-03 08:31:17,129 redis 19476 17156 Connection to Redis lost: Retry (19/20) in 1.00 second.
+CRITICAL 2026-06-03 08:31:22,250 asynchronous 19476 17156 
+Retry limit exceeded while trying to reconnect to the Celery result store
+backend. The Celery application must be restarted.
+

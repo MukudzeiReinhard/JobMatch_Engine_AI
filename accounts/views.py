@@ -6,14 +6,20 @@ import os
 from django.http import Http404, FileResponse
 import fitz
 from docx import Document
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied, ValidationError
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import never_cache
 from django.db import transaction
 from django.shortcuts import render, redirect, get_object_or_404
+from django.urls import reverse
 from django.views import View
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
+from .tasks import log_event
 
 from . import skills_extraction
 from .forms import HBIForm, UserProfileAccountForm
@@ -53,8 +59,16 @@ def signup(request):
 
     return render(request, 'accounts/signup.html', {'form': form})
 
+# This flushes the session database item completely
+@never_cache
+@require_POST
+def logout_view(request):
+    logout(request)
+    return redirect(reverse('login'))
+
 #TODO: in the employee profile add a button to take the survey, and a button to upload a resume. The survey should be a form that allows the employee to input their cognitive scores, and save them to their profile. The matched jobs page should also show the top 5 matching jobs based on the cognitive scores, and a button to view the details of each job. The job details page should show the job description, required skills, company name, location, and a button to apply for the job. The apply button should redirect to a page where the employee can submit their application for the job, and upload their resume if they haven't already. The application page should also show the job description and required skills for reference.  
 @login_required
+@never_cache
 def employee_profile(request):
     current_user_employee = request.user.employee_account
     top_jobs = Job.objects.all()  # Get the 5 most recent active jobs
@@ -85,6 +99,7 @@ def hr_dashboard(request):
 # and use the cv_extraction.py module to extract the text from the resume and save it to the employee's profile. 
 # This will be used to match the employee to jobs based on the skills and experience listed in their resume.
 
+@method_decorator(never_cache, name='dispatch')
 class ResumeUploadView(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'accounts/upload.html')
@@ -190,6 +205,7 @@ def employee_list(request):
     return render(request, 'accounts/create_account.html', {'accounts': all_accounts})
 # ----------- change into initial data collectioin for profile creation----------- 
 @login_required
+@never_cache
 def create_employee_profile(request):
     profile, created = employee_account.objects.get_or_create(user=request.user)  # Ensure the profile exists for the current user
 
@@ -206,6 +222,7 @@ def create_employee_profile(request):
     return render(request, 'accounts/create_profile.html', {'form': form})  # Re-render the form with errors
 # New view for taking the survey and saving the cognitive scores to the employee profile. This will be linked from the employee profile page, and will allow the employee to input their cognitive scores for analytical, practical, relational, and experimental skills. The scores will be saved to the employee's profile and used for job matching.
 @login_required
+@never_cache
 def take_survey(request):
     profile, created = employee_account.objects.get_or_create(user=request.user)  # Ensure the profile exists for the current user
 
@@ -271,6 +288,7 @@ def survey_submitted(request):
 #     return render(request, 'accounts/match_employee.html', context)
 
 @login_required
+@never_cache
 def edit_employee_profile(request):
     employee_profile = request.user.employee_account
     if request.method == 'POST':
@@ -287,6 +305,7 @@ def edit_employee_profile(request):
 #This view will take the employee's cognitive scores and the text extracted from their resume, and match them to the available jobs in the system. 
 #The matching algorithm will consider both the cognitive score gaps and the presence of required skills in the resume text.
 #The results will be displayed on a new page, showing the matched jobs along with their match scores and any missing skills that the employee may want to acquire to improve their chances for those jobs.
+@method_decorator(never_cache, name='dispatch')
 class JobMatchView(LoginRequiredMixin, View):
     def get(self, request):
         user_emp = request.user.employee_account
@@ -385,6 +404,7 @@ class JobMatchView(LoginRequiredMixin, View):
         })
 
 # A simple View to handle the 'Apply' action
+@method_decorator(never_cache, name='dispatch')
 class ApplyJobView(LoginRequiredMixin, View):
     def post(self, request, job_id):
         job = get_object_or_404(Job, id=job_id)
@@ -398,8 +418,20 @@ class ApplyJobView(LoginRequiredMixin, View):
         JobApplications.objects.create(job=job, employee=employee)
         
         return render(request, 'accounts/apply_success.html', {'job': job, 'message': 'Application submitted successfully!'})
+
+
+@login_required
+@never_cache
+def demo_log(request):
+    """Demo view that enqueues an async logging task and returns JSON."""
+    user = request.user
+    message = f"Demo log from user {user.id} ({user.username})"
+    # enqueue the task
+    log_event.delay('info', message, {'user_id': user.id})
+    return JsonResponse({'status': 'enqueued', 'message': message})
     
 #TODO: improve the security of the resume download by ensuring that only authorized users can access the resume files, and that the files are served securely without exposing the file system structure. Consider using Django's FileResponse to serve the files and implementing proper access controls to prevent unauthorized access.
+@method_decorator(never_cache, name='dispatch')
 class SecureResumeDownloadView(LoginRequiredMixin, View):
     def get(self, request, account_id):
         try:

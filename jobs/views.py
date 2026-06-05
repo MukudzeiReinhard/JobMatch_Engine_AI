@@ -3,6 +3,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, render, redirect
 from django.http import HttpResponse
 from django.core.exceptions import PermissionDenied
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import never_cache
 from django.views.generic import ListView
 from .forms import JobEntryForm
 from .models  import  Job, JobEmployeeCompatibility, JobApplications
@@ -41,6 +43,7 @@ def job_list(request):
 #  The form should also have a submit button that will save the job entry to the database when clicked.
 #  After submission, the user should be redirected to the job list page where they can see all the job entries including the one they just submitted.
 @login_required
+@never_cache
 def create_job(request):
     if request.user.employee_account.role != employee_account.IS_HR:
         raise PermissionDenied
@@ -60,6 +63,7 @@ def create_job(request):
 # for each job in the system, it will calculate the compatibility score for each employee based on their skills and cognitive scores.
 # it will list the jobs and for each job, it will list the potential candidates sorted by their compatibility score in descending order. 
 
+@method_decorator(never_cache, name='dispatch')
 class PotentialCandidatesView(LoginRequiredMixin, ListView):
     model = JobEmployeeCompatibility
     template_name = 'jobs/potential_candidates.html'
@@ -89,6 +93,7 @@ class PotentialCandidatesView(LoginRequiredMixin, ListView):
 
 # View to show job applications for recruiters
 @login_required
+@never_cache
 def job_applications(request):
     try:
         if request.user.employee_account.role != employee_account.IS_HR:
@@ -105,6 +110,7 @@ def job_applications(request):
     return render(request, 'jobs/job_applications.html', context)
 
 @login_required
+@never_cache
 def delete_job(request, job_id):
     user = request.user
     try:

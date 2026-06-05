@@ -4,6 +4,7 @@ from .views import SecureResumeDownloadView
 
 urlpatterns = [
     path('signup/', views.signup, name='signup'),
+    path('logout/', views.logout_view, name='logout'),
     path('create-profile/', views.create_employee_profile, name='create_employee_profile'),
     path('edit-profile/', views.edit_employee_profile, name='edit_employee_profile'),
     #path('employee_profile/', views.EmployeeProfileView.as_view(), name='employee_profile'),
@@ -16,5 +17,6 @@ urlpatterns = [
     path('apply/<int:job_id>/', views.ApplyJobView.as_view(), name='apply_to_job'),
     path('upload/', views.ResumeUploadView.as_view(), name='upload_resume'),
     path('resumes/download/<int:account_id>/', SecureResumeDownloadView.as_view(), name='download_resume'),
+    path('demo-log/', views.demo_log, name='demo_log'),
 
     ]
