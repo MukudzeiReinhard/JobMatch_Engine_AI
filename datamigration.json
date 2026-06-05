@@ -1,2 +1,3451 @@
 [
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-03-27T16:58:13.735Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "python",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-03-27T16:58:51.109Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "python",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-03-27T16:59:10.097Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "sql",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-03-27T16:59:45.244Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "statistics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-03-27T17:00:09.167Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "machine learning",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-03-27T17:02:54.405Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "e",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-03-27T17:03:08.564Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Engineering",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-03-27T17:03:27.206Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Data Scientist",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (1)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-03-27T17:05:02.802Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Human resources",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-03-27T17:05:42.947Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "recruitment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-03-27T17:06:10.089Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "labor law",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-03-27T17:06:45.541Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "communication and mediation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-03-27T17:07:01.943Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "communication",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-03-27T17:07:13.327Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "mediation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-03-27T17:07:29.299Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Human resources",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-03-27T17:07:37.512Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "HR Manager",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (6)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (7)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (8)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-03-27T17:09:37.386Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "R&D / Creative",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-03-27T17:10:19.353Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "Adobe Suite",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-03-27T17:10:50.555Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "Strategy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-03-27T17:11:17.899Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "Branding",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-03-27T17:11:46.951Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "Copywriting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-03-27T17:11:55.977Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Creative Director",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (9)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (10)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (11)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-03-27T17:14:10.130Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Finance",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-03-27T17:15:02.501Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "13",
+        "object_repr": "Excel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-03-27T17:15:35.283Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "14",
+        "object_repr": "Accounting",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-03-27T17:15:58.796Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "15",
+        "object_repr": "Risk Assessment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-03-27T17:16:17.139Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "16",
+        "object_repr": "Tax Law",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-03-27T17:16:32.627Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Financial Auditor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (13)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (14)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (15)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (16)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-03-27T17:18:01.928Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "17",
+        "object_repr": "AWS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-03-27T17:18:19.118Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "18",
+        "object_repr": "Docker",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-03-27T17:18:29.271Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "DevOps Engineer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (17)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (18)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (19)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-03-27T17:20:24.916Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Data Auditor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (20)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (21)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"JobSkillRequirement object (22)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-04-20T05:37:10.427Z",
+        "user": 2,
+        "content_type": 2,
+        "object_id": "1",
+        "object_repr": "Admins",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-04-20T05:51:58.774Z",
+        "user": 2,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "HR Recruiters",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-05-02T07:54:45.118Z",
+        "user": 2,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "muki",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-05-19T18:48:57.526Z",
+        "user": 2,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "HR Recruiters",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-05-19T18:52:02.738Z",
+        "user": 2,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Employee",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-05-24T16:42:01.504Z",
+        "user": 2,
+        "content_type": 10,
+        "object_id": "19",
+        "object_repr": "cloud infrastructure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-05-24T16:43:00.705Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Data Engineer",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - python (Importance: 4)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - sql (Importance: 5)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - cloud infrastructure (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - machine learning (Importance: 2)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - Docker (Importance: 3)\"}}, {\"added\": {\"name\": \"job skill requirement\", \"object\": \"Data Engineer - statistics (Importance: 3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-05-24T16:52:20.197Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Data Engineer",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-06-03T05:46:17.016Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "mck",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-06-03T05:55:35.602Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "mck",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"User permissions\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 3,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 3,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 3,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 3,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 2,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 2,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 2,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 2,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add department",
+        "content_type": 7,
+        "codename": "add_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change department",
+        "content_type": 7,
+        "codename": "change_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete department",
+        "content_type": 7,
+        "codename": "delete_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view department",
+        "content_type": 7,
+        "codename": "view_department"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add job",
+        "content_type": 8,
+        "codename": "add_job"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change job",
+        "content_type": 8,
+        "codename": "change_job"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete job",
+        "content_type": 8,
+        "codename": "delete_job"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view job",
+        "content_type": 8,
+        "codename": "view_job"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add skill",
+        "content_type": 10,
+        "codename": "add_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change skill",
+        "content_type": 10,
+        "codename": "change_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete skill",
+        "content_type": 10,
+        "codename": "delete_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view skill",
+        "content_type": 10,
+        "codename": "view_skill"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add job skill requirement",
+        "content_type": 9,
+        "codename": "add_jobskillrequirement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change job skill requirement",
+        "content_type": 9,
+        "codename": "change_jobskillrequirement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete job skill requirement",
+        "content_type": 9,
+        "codename": "delete_jobskillrequirement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view job skill requirement",
+        "content_type": 9,
+        "codename": "view_jobskillrequirement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add employee_account",
+        "content_type": 11,
+        "codename": "add_employee_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change employee_account",
+        "content_type": 11,
+        "codename": "change_employee_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete employee_account",
+        "content_type": 11,
+        "codename": "delete_employee_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view employee_account",
+        "content_type": 11,
+        "codename": "view_employee_account"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add user profile",
+        "content_type": 12,
+        "codename": "add_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change user profile",
+        "content_type": 12,
+        "codename": "change_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete user profile",
+        "content_type": 12,
+        "codename": "delete_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view user profile",
+        "content_type": 12,
+        "codename": "view_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add job employee compatibility",
+        "content_type": 13,
+        "codename": "add_jobemployeecompatibility"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change job employee compatibility",
+        "content_type": 13,
+        "codename": "change_jobemployeecompatibility"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete job employee compatibility",
+        "content_type": 13,
+        "codename": "delete_jobemployeecompatibility"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view job employee compatibility",
+        "content_type": 13,
+        "codename": "view_jobemployeecompatibility"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add job applications",
+        "content_type": 14,
+        "codename": "add_jobapplications"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change job applications",
+        "content_type": 14,
+        "codename": "change_jobapplications"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete job applications",
+        "content_type": 14,
+        "codename": "delete_jobapplications"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view job applications",
+        "content_type": 14,
+        "codename": "view_jobapplications"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add access attempt",
+        "content_type": 15,
+        "codename": "add_accessattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change access attempt",
+        "content_type": 15,
+        "codename": "change_accessattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete access attempt",
+        "content_type": 15,
+        "codename": "delete_accessattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view access attempt",
+        "content_type": 15,
+        "codename": "view_accessattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add access log",
+        "content_type": 18,
+        "codename": "add_accesslog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change access log",
+        "content_type": 18,
+        "codename": "change_accesslog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete access log",
+        "content_type": 18,
+        "codename": "delete_accesslog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view access log",
+        "content_type": 18,
+        "codename": "view_accesslog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add access failure",
+        "content_type": 17,
+        "codename": "add_accessfailurelog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change access failure",
+        "content_type": 17,
+        "codename": "change_accessfailurelog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete access failure",
+        "content_type": 17,
+        "codename": "delete_accessfailurelog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view access failure",
+        "content_type": 17,
+        "codename": "view_accessfailurelog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add access attempt expiration",
+        "content_type": 16,
+        "codename": "add_accessattemptexpiration"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change access attempt expiration",
+        "content_type": 16,
+        "codename": "change_accessattemptexpiration"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete access attempt expiration",
+        "content_type": 16,
+        "codename": "delete_accessattemptexpiration"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view access attempt expiration",
+        "content_type": 16,
+        "codename": "view_accessattemptexpiration"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Admins",
+        "permissions": [
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            5,
+            6,
+            7,
+            8,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            53,
+            54,
+            55,
+            56,
+            49,
+            50,
+            51,
+            52,
+            37,
+            38,
+            39,
+            40,
+            33,
+            34,
+            35,
+            36,
+            21,
+            22,
+            23,
+            24
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "HR Recruiters",
+        "permissions": [
+            41,
+            44,
+            45,
+            48,
+            1,
+            2,
+            3,
+            4,
+            13,
+            16,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            53,
+            56,
+            49,
+            50,
+            51,
+            52,
+            37,
+            38,
+            39,
+            40,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "Employee",
+        "permissions": [
+            41,
+            45
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$R8CiEqwFrNM6kBwgqIki4e$jDDkN8+a3FlyErC+rphMo1HplqzAqFJ4K5Ed4HN2FeA=",
+        "last_login": "2026-05-24T16:53:10.919Z",
+        "is_superuser": false,
+        "username": "nene",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-27T07:38:37.061Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$cv8oLu2G3ljy1VQPIPaNX5$E69yM5vBOjlCg3eK3h+NBhf9SPU6p3unoTLTijzOHjA=",
+        "last_login": "2026-06-05T02:45:04.260Z",
+        "is_superuser": true,
+        "username": "reinhardmuchemwa",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-03-27T16:49:16.773Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$kutn2TIgI7sktqY10i1HTM$eaPk175JGdfPqLCAviIP/FnclUjkgzhcZ4o65S/WOuo=",
+        "last_login": "2026-06-05T02:44:31.778Z",
+        "is_superuser": false,
+        "username": "betty",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-31T13:59:10.023Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$ZwKU6ddrSXDeOpshilXr5e$R90n/JEXd2RcZ+ekc9NOWec8PhtqGtdiWr29RqOFqPY=",
+        "last_login": "2026-06-05T02:24:25.656Z",
+        "is_superuser": false,
+        "username": "R22906U",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-04-04T14:54:22.802Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$77VOpIr93wMhaumXebUxfC$5vZ+BvguEoEV6SbXApfW479l03zZr9DMVXYklaj4c6E=",
+        "last_login": "2026-06-03T05:56:20.793Z",
+        "is_superuser": false,
+        "username": "mck",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-05-02T01:54:30Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            51,
+            52,
+            37,
+            38,
+            39,
+            40,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$uqTGtzjV8Wor7h8vUxpGUQ$YcubgSd8YCsh0MVQZzgxfG/BR12ZwTMYKLCzZ7iOM34=",
+        "last_login": "2026-06-03T05:41:28.197Z",
+        "is_superuser": false,
+        "username": "mck2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-05-23T13:48:11.993Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$F6n68iY6NIQWPu44JNXAAX$DkN2zZTOL3wkW1uBJRi1i9zhmS8ZwxqYvwrxarXdJew=",
+        "last_login": "2026-06-01T10:53:51.154Z",
+        "is_superuser": false,
+        "username": "mukudzei",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T10:50:02.671Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$IyNmZxjdWdRbinNOWrcdDw$N8n8JCF3Uejl7dvbp73YC2EsqN9ZaUJKMf28/MDn1Vw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "reinhard",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T10:55:18.492Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$amXC0opM3MqcWtMvV12hSF$9yFmci9n8lDwfl5XcXPZdfo+7zo0i60wfQ3FLXHfuto=",
+        "last_login": "2026-06-01T11:04:14.761Z",
+        "is_superuser": false,
+        "username": "reinhardx",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T10:57:26.542Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$t64QQ3IJQdOVpwK5U5oAC7$PzJ9Y2GRo4EIFFownQfVEhq8IZGjalKl2sq+tJvsMWI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mreinhard",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T11:05:07.018Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$Pne9KBtmi5ASnoAbSzcIqc$UFQjTkp9kBlLi4HoVRHDD5TEHBusrq+qyNXascXxywA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mmreinhard",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T11:19:51.662Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$wYrezhU5xjBx13CHGr4aRd$csmBngxUMRHQwV9pIYoZPiZjoZNqi485pizBBOku+14=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mreinhardm",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T11:29:44.018Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$eM5cVwG0i6qXLg290O8YPT$f5/x0GyXjAkL/N4Qsd7W9JMjm9mi2TdAy+MvSXXPUO8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "qwex",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T11:43:21.533Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$mugfznvAWvzOyW8vmiBW3o$chMCGT1iTmeii0NS00qUIufgbWoOfNaoaU4j3Z4mzbI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "qwexty",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T11:48:00.560Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$hErFSxVkX4IzgQZkzg1ox8$PMee9zTjWRKdOZzqF0EC5ZuJfrJFTpZUZ2jqSsh6VYc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "qwexty3",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T12:09:12.340Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$q8wJCPv57UACZeg3Ks7ZCy$m/Shhqh8ZbRZX9noqhJUlYk0roAVCrK1njdrH8yWk34=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "qwexty33",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T12:17:10.757Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$kteHtEbLByQLFfYh8OYrK0$251KE7kE+og8r3h7hIc8cVaHE/PbQwLg/YxVfIzJ9VQ=",
+        "last_login": "2026-06-01T12:20:24.799Z",
+        "is_superuser": false,
+        "username": "dr3",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-01T12:20:21.742Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 19,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$RaD5Wu5lRYpJv0pzOKEbV5$8uh2MNgbJbjGRxKNlaVeC8GMc2Rjo0obhK4iX66WOH8=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "masteradmin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-05T08:59:29.376Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "jobs",
+        "model": "department"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "jobs",
+        "model": "job"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "jobs",
+        "model": "jobskillrequirement"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "jobs",
+        "model": "skill"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "accounts",
+        "model": "employee_account"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "accounts",
+        "model": "userprofile"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "jobs",
+        "model": "jobemployeecompatibility"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "jobs",
+        "model": "jobapplications"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "axes",
+        "model": "accessattempt"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "axes",
+        "model": "accessattemptexpiration"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "axes",
+        "model": "accessfailurelog"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "axes",
+        "model": "accesslog"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "87w56dfkqxh17grt1d8iyonaddmr6r51",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGln-LhtKes5gre01DiBHipMKcXcSKQU0U8x7M28RaF1qWDvPYcziIqw4_XaR0pPbDvKD2n2SaWrLPEa5K_KgXd6mzK_r4f4dVOp1W0dQZLwhq53jWMAXHwt61ApRewsKEmM-swbDarDFZZX0FoPyBIVQfL7Kkzc8:1wUes6:ezYaDZeulGsLLf4wehnd0rD8ZXdbVyDZ7JsAWW0qARs",
+        "expire_date": "2026-06-17T06:14:34.282Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "benpiadkmb16gpkdcyi38dnqqfbisurp",
+    "fields": {
+        "session_data": ".eJxVjEsOAiEQRO_C2pAG-bp07xlI07QyaiCZz8p4dyWZhe4q9V7VSyTc1pq2hec0FXESWhx-u4z04DZAuWO7dUm9rfOU5VDkThd56YWf5939O6i41O8a0MXCdLSojCUwYHwgq9hrHIkcWDZKFc3sTXYRXAzs0CuGqwcTxPsDzVs3Ew:1wVKYS:j3Cq8Vgj00PuEKde6y5tiaKRj46wQa6GKVDuKNGz51o",
+        "expire_date": "2026-06-19T02:45:04.279Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dm0rarl9qrz9cpl0rt4wez0cr47n0f6m",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQAP-FsyGUR6EevfcbyLK7SNWUpLQn478bkh70OjOZt4hw7CUejbe4kLgKJy6_LAE-ee2CHrDeq8S67tuSZE_kaZucK_HrdrZ_gwKt9C0NGNAF8tY6l8CjMhpAZeSAntGxUdkHnbUZYTAp5ImYR6s9TWoCFJ8v9cs4bQ:1wJA8d:UvM0g_2L1gJxTqJiS2JaJuFYUlfwi9e4A8cjLJ8d1Uo",
+        "expire_date": "2026-05-16T13:12:07.387Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fohmr13qadwknqoyvkmgq4wm1gjrm6v2",
+    "fields": {
+        "session_data": "e30:1wU0EH:t4xJdRtmS6BxPWHaiP-PfdsrMLdNdugTTvjGuUdryyI",
+        "expire_date": "2026-06-15T10:50:45.501Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jmhqgxpon8c1a7tbtctytlqssbvu0pvz",
+    "fields": {
+        "session_data": "e30:1wU1Zw:A0Cw5KMycvEo4Q09aQReRW9ZQxrZPDbk4GgHBmB6DMU",
+        "expire_date": "2026-06-15T12:17:12.288Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m8j62w87xnx9mupmzlqne6siovurzefu",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlm7-E9Jzxks27vBAeRIcVIh7o4spYD2zcx7i5j2rca98xpnEhehxel3y6k8uQ1Aj9TuiyxL29Y5y6HIg3Z5W4hf18P9O6ip11E7dGdUjrBM4FWw1hASMRCooFXxCYGZiocJjCWLWYPLxqnA1iEG8fkCzZM3Eg:1w92OG:1SRZ3sjDScbTYtj6tjgUE5RbHO4BpugNL9z2chYkhI0",
+        "expire_date": "2026-04-18T14:54:24.346Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "mibwet4ijztldep26eq5x7a5aukbe84o",
+    "fields": {
+        "session_data": "e30:1wU0q1:gGg40oi-nuTq6XTG3aTdyq_od1PbMQWVo1jiHD-4KPg",
+        "expire_date": "2026-06-15T11:29:45.511Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uxjw3uo9l59lhhnoebl4bii72ztjznto",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBCGQdcuvcMBJhBqgaS0q6Md7dNutDtf-_9t_BhXYpfO89-InERozj9bjGkJ9cd0CPUe5Op1WWeotwVedAub434dT3cv4MSetnqCKwJlDGaEgDi2bjIyA7Q8IDkgskWYVQZrGUVlSHMKqNFHDauWXy-0CY3Ow:1wOedu:kqNIpWiUWw-X_fLS3VAu0wy0E67WDe4oAjGS_GR9qh0",
+        "expire_date": "2026-05-31T16:47:06.532Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xspk1g64m8dzuexnqk20qeghm1u14qs7",
+    "fields": {
+        "session_data": "e30:1wU0Eu:6HGVVJXcJxpm40VX7m7-R5k3aZ7nRlHjWkMJ_e225Tc",
+        "expire_date": "2026-06-15T10:51:24.449Z"
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 1,
+    "fields": {
+        "name": "python",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 2,
+    "fields": {
+        "name": "sql",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 3,
+    "fields": {
+        "name": "statistics",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 4,
+    "fields": {
+        "name": "machine learning",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 5,
+    "fields": {
+        "name": "recruitment",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 6,
+    "fields": {
+        "name": "labor law",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 7,
+    "fields": {
+        "name": "communication",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 8,
+    "fields": {
+        "name": "mediation",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 9,
+    "fields": {
+        "name": "Adobe Suite",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 10,
+    "fields": {
+        "name": "Strategy",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 11,
+    "fields": {
+        "name": "Branding",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 12,
+    "fields": {
+        "name": "Copywriting",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 13,
+    "fields": {
+        "name": "Excel",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 14,
+    "fields": {
+        "name": "Accounting",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 15,
+    "fields": {
+        "name": "Risk Assessment",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 16,
+    "fields": {
+        "name": "Tax Law",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 17,
+    "fields": {
+        "name": "AWS",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 18,
+    "fields": {
+        "name": "Docker",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.skill",
+    "pk": 19,
+    "fields": {
+        "name": "cloud infrastructure",
+        "description": ""
+    }
+},
+{
+    "model": "jobs.department",
+    "pk": 1,
+    "fields": {
+        "name": "Engineering",
+        "analytical_weight": 0.4,
+        "practical_weight": 0.4,
+        "relational_weight": 0.1,
+        "experimental_weight": 0.1
+    }
+},
+{
+    "model": "jobs.department",
+    "pk": 2,
+    "fields": {
+        "name": "Human resources",
+        "analytical_weight": 0.1,
+        "practical_weight": 0.2,
+        "relational_weight": 0.6,
+        "experimental_weight": 0.1
+    }
+},
+{
+    "model": "jobs.department",
+    "pk": 3,
+    "fields": {
+        "name": "R&D / Creative",
+        "analytical_weight": 0.15,
+        "practical_weight": 0.1,
+        "relational_weight": 0.15,
+        "experimental_weight": 0.6
+    }
+},
+{
+    "model": "jobs.department",
+    "pk": 4,
+    "fields": {
+        "name": "Finance",
+        "analytical_weight": 0.6,
+        "practical_weight": 0.2,
+        "relational_weight": 0.1,
+        "experimental_weight": 0.1
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 1,
+    "fields": {
+        "title": "Data Scientist",
+        "company": "Nexus Analytics",
+        "location": "New York, NY (Remote)",
+        "description": "",
+        "target_analytical": 85,
+        "target_practical": 60,
+        "target_relational": 30,
+        "target_experimental": 70,
+        "department": 1,
+        "timestamp": "2026-03-27T17:03:27.199Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 2,
+    "fields": {
+        "title": "HR Manager",
+        "company": "Innovate Labs",
+        "location": "Seattle, WA",
+        "description": "",
+        "target_analytical": 30,
+        "target_practical": 60,
+        "target_relational": 90,
+        "target_experimental": 40,
+        "department": 2,
+        "timestamp": "2026-03-27T17:07:37.506Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 3,
+    "fields": {
+        "title": "Creative Director",
+        "company": "ByteStream Tech",
+        "location": "Austin, TX",
+        "description": "",
+        "target_analytical": 40,
+        "target_practical": 30,
+        "target_relational": 60,
+        "target_experimental": 90,
+        "department": 3,
+        "timestamp": "2026-03-27T17:11:55.973Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 4,
+    "fields": {
+        "title": "Financial Auditor",
+        "company": "CloudScale Systems",
+        "location": "Seattle, WA",
+        "description": "",
+        "target_analytical": 95,
+        "target_practical": 80,
+        "target_relational": 20,
+        "target_experimental": 20,
+        "department": 4,
+        "timestamp": "2026-03-27T17:16:32.620Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 5,
+    "fields": {
+        "title": "DevOps Engineer",
+        "company": "Pixel Perfect Co.",
+        "location": "San Francisco, CA",
+        "description": "",
+        "target_analytical": 80,
+        "target_practical": 80,
+        "target_relational": 20,
+        "target_experimental": 40,
+        "department": 1,
+        "timestamp": "2026-03-27T17:18:29.267Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 6,
+    "fields": {
+        "title": "Data Auditor",
+        "company": "Innovate Labs",
+        "location": "Chicago, IL",
+        "description": "",
+        "target_analytical": 90,
+        "target_practical": 70,
+        "target_relational": 30,
+        "target_experimental": 20,
+        "department": 4,
+        "timestamp": "2026-03-27T17:20:24.909Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 7,
+    "fields": {
+        "title": "Data Engineer",
+        "company": "Pixel Perfect Co.",
+        "location": "Austin, TX",
+        "description": "",
+        "target_analytical": 70,
+        "target_practical": 80,
+        "target_relational": 65,
+        "target_experimental": 50,
+        "department": 1,
+        "timestamp": "2026-05-01T10:49:13.155Z"
+    }
+},
+{
+    "model": "jobs.job",
+    "pk": 8,
+    "fields": {
+        "title": "Human Resources Business Partner",
+        "company": "ByteStream Tech",
+        "location": "Masvingo",
+        "description": "",
+        "target_analytical": 60,
+        "target_practical": 75,
+        "target_relational": 80,
+        "target_experimental": 42,
+        "department": null,
+        "timestamp": "2026-05-23T14:41:46.191Z"
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 1,
+    "fields": {
+        "job": 1,
+        "skill": 1,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 2,
+    "fields": {
+        "job": 1,
+        "skill": 2,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 3,
+    "fields": {
+        "job": 1,
+        "skill": 3,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 4,
+    "fields": {
+        "job": 1,
+        "skill": 4,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 5,
+    "fields": {
+        "job": 2,
+        "skill": 5,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 6,
+    "fields": {
+        "job": 2,
+        "skill": 6,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 7,
+    "fields": {
+        "job": 2,
+        "skill": 7,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 8,
+    "fields": {
+        "job": 2,
+        "skill": 8,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 9,
+    "fields": {
+        "job": 3,
+        "skill": 9,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 10,
+    "fields": {
+        "job": 3,
+        "skill": 10,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 11,
+    "fields": {
+        "job": 3,
+        "skill": 11,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 12,
+    "fields": {
+        "job": 3,
+        "skill": 12,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 13,
+    "fields": {
+        "job": 4,
+        "skill": 13,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 14,
+    "fields": {
+        "job": 4,
+        "skill": 14,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 15,
+    "fields": {
+        "job": 4,
+        "skill": 15,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 16,
+    "fields": {
+        "job": 4,
+        "skill": 16,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 17,
+    "fields": {
+        "job": 5,
+        "skill": 1,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 18,
+    "fields": {
+        "job": 5,
+        "skill": 17,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 19,
+    "fields": {
+        "job": 5,
+        "skill": 18,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 20,
+    "fields": {
+        "job": 6,
+        "skill": 1,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 21,
+    "fields": {
+        "job": 6,
+        "skill": 2,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 22,
+    "fields": {
+        "job": 6,
+        "skill": 13,
+        "importance": 2
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 23,
+    "fields": {
+        "job": 7,
+        "skill": 1,
+        "importance": 4
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 24,
+    "fields": {
+        "job": 7,
+        "skill": 2,
+        "importance": 5
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 25,
+    "fields": {
+        "job": 7,
+        "skill": 19,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 26,
+    "fields": {
+        "job": 7,
+        "skill": 4,
+        "importance": 2
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 27,
+    "fields": {
+        "job": 7,
+        "skill": 18,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobskillrequirement",
+    "pk": 28,
+    "fields": {
+        "job": 7,
+        "skill": 3,
+        "importance": 3
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 1,
+    "fields": {
+        "job": 1,
+        "employee": 2,
+        "compatibility_score": 92.16
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 2,
+    "fields": {
+        "job": 2,
+        "employee": 2,
+        "compatibility_score": 28.72
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 3,
+    "fields": {
+        "job": 3,
+        "employee": 2,
+        "compatibility_score": 28.560000000000002
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 4,
+    "fields": {
+        "job": 4,
+        "employee": 2,
+        "compatibility_score": 67.04470588235294
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 5,
+    "fields": {
+        "job": 5,
+        "employee": 2,
+        "compatibility_score": 48.12
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 6,
+    "fields": {
+        "job": 6,
+        "employee": 2,
+        "compatibility_score": 93.68
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 7,
+    "fields": {
+        "job": 1,
+        "employee": 1,
+        "compatibility_score": 33.6
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 8,
+    "fields": {
+        "job": 2,
+        "employee": 1,
+        "compatibility_score": 90.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 9,
+    "fields": {
+        "job": 3,
+        "employee": 1,
+        "compatibility_score": 22.64
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 10,
+    "fields": {
+        "job": 4,
+        "employee": 1,
+        "compatibility_score": 35.6
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 11,
+    "fields": {
+        "job": 5,
+        "employee": 1,
+        "compatibility_score": 81.80000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 12,
+    "fields": {
+        "job": 6,
+        "employee": 1,
+        "compatibility_score": 36.4
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 13,
+    "fields": {
+        "job": 1,
+        "employee": 3,
+        "compatibility_score": 63.12
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 14,
+    "fields": {
+        "job": 2,
+        "employee": 3,
+        "compatibility_score": 28.400000000000002
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 15,
+    "fields": {
+        "job": 3,
+        "employee": 3,
+        "compatibility_score": 35.36000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 16,
+    "fields": {
+        "job": 4,
+        "employee": 3,
+        "compatibility_score": 26.64
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 17,
+    "fields": {
+        "job": 5,
+        "employee": 3,
+        "compatibility_score": 44.120000000000005
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 18,
+    "fields": {
+        "job": 6,
+        "employee": 3,
+        "compatibility_score": 78.13090909090909
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 19,
+    "fields": {
+        "job": 7,
+        "employee": 1,
+        "compatibility_score": 45.6
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 20,
+    "fields": {
+        "job": 7,
+        "employee": 2,
+        "compatibility_score": 75.72
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 21,
+    "fields": {
+        "job": 1,
+        "employee": 4,
+        "compatibility_score": 12.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 22,
+    "fields": {
+        "job": 2,
+        "employee": 4,
+        "compatibility_score": 10.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 23,
+    "fields": {
+        "job": 3,
+        "employee": 4,
+        "compatibility_score": 11.200000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 24,
+    "fields": {
+        "job": 4,
+        "employee": 4,
+        "compatibility_score": 9.200000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 25,
+    "fields": {
+        "job": 5,
+        "employee": 4,
+        "compatibility_score": 12.0
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 26,
+    "fields": {
+        "job": 6,
+        "employee": 4,
+        "compatibility_score": 10.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 27,
+    "fields": {
+        "job": 7,
+        "employee": 4,
+        "compatibility_score": 73.5
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 28,
+    "fields": {
+        "job": 1,
+        "employee": 5,
+        "compatibility_score": 34.72
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 29,
+    "fields": {
+        "job": 2,
+        "employee": 5,
+        "compatibility_score": 25.040000000000003
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 30,
+    "fields": {
+        "job": 3,
+        "employee": 5,
+        "compatibility_score": 33.62823529411765
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 31,
+    "fields": {
+        "job": 4,
+        "employee": 5,
+        "compatibility_score": 37.04
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 32,
+    "fields": {
+        "job": 5,
+        "employee": 5,
+        "compatibility_score": 36.32
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 33,
+    "fields": {
+        "job": 6,
+        "employee": 5,
+        "compatibility_score": 37.52
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 34,
+    "fields": {
+        "job": 7,
+        "employee": 5,
+        "compatibility_score": 34.760000000000005
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 35,
+    "fields": {
+        "job": 8,
+        "employee": 2,
+        "compatibility_score": 91.3
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 36,
+    "fields": {
+        "job": 8,
+        "employee": 1,
+        "compatibility_score": 95.30000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 37,
+    "fields": {
+        "job": 1,
+        "employee": 10,
+        "compatibility_score": 12.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 38,
+    "fields": {
+        "job": 2,
+        "employee": 10,
+        "compatibility_score": 10.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 39,
+    "fields": {
+        "job": 3,
+        "employee": 10,
+        "compatibility_score": 11.200000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 40,
+    "fields": {
+        "job": 4,
+        "employee": 10,
+        "compatibility_score": 9.200000000000001
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 41,
+    "fields": {
+        "job": 5,
+        "employee": 10,
+        "compatibility_score": 12.0
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 42,
+    "fields": {
+        "job": 6,
+        "employee": 10,
+        "compatibility_score": 10.8
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 43,
+    "fields": {
+        "job": 7,
+        "employee": 10,
+        "compatibility_score": 11.4
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 44,
+    "fields": {
+        "job": 8,
+        "employee": 10,
+        "compatibility_score": 74.3
+    }
+},
+{
+    "model": "jobs.jobemployeecompatibility",
+    "pk": 45,
+    "fields": {
+        "job": 8,
+        "employee": 5,
+        "compatibility_score": 92.9
+    }
+},
+{
+    "model": "jobs.jobapplications",
+    "pk": 1,
+    "fields": {
+        "job": 6,
+        "employee": 2,
+        "application_date": "2026-04-20T13:18:57.482Z"
+    }
+},
+{
+    "model": "jobs.jobapplications",
+    "pk": 2,
+    "fields": {
+        "job": 4,
+        "employee": 2,
+        "application_date": "2026-04-20T14:10:14.708Z"
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 1,
+    "fields": {
+        "name": "Anesu",
+        "surname": "Mbiriri",
+        "username": "nene",
+        "email": "anesum@gmail.com",
+        "user": 1,
+        "role": "EMPLOYEE",
+        "location": "San Francisco, CA",
+        "birth_date": "2009-12-02",
+        "bio": "4th Year student",
+        "resume": "resumes/Geminiapi3.pdf",
+        "uploaded_at": null,
+        "cv_text": "• \nName: Mukudzei Zimbabwe \n• \nProfessional Summary: A versatile professional who excels at managing both \ntechnical infrastructure and human capital. Focused on creating efficient workflows \nand maintaining harmonious work environments through clear communication and \nrobust labor law knowledge. \n• \nSkills: Recruitment, Labor Law, Mediation, Communication, Docker, AWS, Python \n(Scripting). \n• \nExperience: \no Operations Assistant (Primary School): Managed administrative support \nand staff coordination, ensuring all daily activities aligned with institutional \nregulations. \no Junior Systems Admin: Implemented Docker containers to streamline school \nmanagement software deployment while handling internal technical support. \n \n",
+        "skills_list": "recruitment, labor law, mediation, communication, docker, aws, python (scripting), technical management, human capital management, workflow optimization, efficiency, conflict resolution, teamwork, administrative support, staff coordination, regulatory compliance, operational management, containerization, system implementation, software deployment, system optimization, technical support",
+        "target_analytical": 88,
+        "target_practical": 80,
+        "target_relational": 68,
+        "target_experimental": 40
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 2,
+    "fields": {
+        "name": "Akudzwe",
+        "surname": "Mbiriri",
+        "username": "betty",
+        "email": "betty@gmail.com",
+        "user": 3,
+        "role": "EMPLOYEE",
+        "location": "Chicago, IL",
+        "birth_date": "2012-07-09",
+        "bio": "2nd form",
+        "resume": "resumes/G_api1.docx",
+        "uploaded_at": null,
+        "cv_text": "Name: Tanaka Masvingo Professional Summary: Detail-oriented Business Management Systems graduate with a focus on data integrity and financial modelling. Expert in identifying patterns and ensuring compliance through rigorous technical analysis. Skills: Python (Advanced), SQL (Expert), Excel (Macros & Pivot Tables), Statistics, Risk Assessment, Accounting Principles. Experience: Junior Data Analyst: Built automated reporting tools using Python and SQL to audit transaction records for local banking clients. Academic Project: Developed a predictive turnover model using machine learning to identify high-risk employee segments. ",
+        "skills_list": "python, sql, excel, macros, pivot tables, statistics, risk assessment, accounting principles, data integrity, financial modelling, pattern recognition, compliance, technical analysis, automated reporting, auditing, predictive modeling, machine learning",
+        "target_analytical": 96,
+        "target_practical": 88,
+        "target_relational": 68,
+        "target_experimental": 68
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 3,
+    "fields": {
+        "name": "Reinhard",
+        "surname": "Muchemwa",
+        "username": "R222906U",
+        "email": "aqua@gmail.com",
+        "user": 4,
+        "role": "EMPLOYEE",
+        "location": "Masvingo",
+        "birth_date": "2003-04-21",
+        "bio": "4th year student",
+        "resume": "resumes/A_zcEWuLC.pdf",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 68,
+        "target_practical": 44,
+        "target_relational": 60,
+        "target_experimental": 80
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 4,
+    "fields": {
+        "name": "Mukudzei",
+        "surname": "Mbiri",
+        "username": "muki",
+        "email": "reinmchemwa@gmail.com",
+        "user": 5,
+        "role": "HR",
+        "location": "Masvingo",
+        "birth_date": "2012-07-09",
+        "bio": "BMS design",
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": "",
+        "skills_list": "",
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 5,
+    "fields": {
+        "name": "Muku",
+        "surname": "Mchemwa",
+        "username": "mck2",
+        "email": "aaa@gmail.com",
+        "user": 6,
+        "role": "EMPLOYEE",
+        "location": "San Francisco, CA",
+        "birth_date": "2012-07-09",
+        "bio": "3rd year",
+        "resume": "resumes/Geminiapi2.pdf",
+        "uploaded_at": null,
+        "cv_text": "• \nName: Chipo Harare \n• \nProfessional Summary: Visionary creative lead with a passion for brand storytelling \nand conceptual strategy. Skilled at bridging the gap between artistic vision and market \nrequirements to drive engagement. \n• \nSkills: Adobe Creative Suite (Photoshop, Illustrator, InDesign), Branding Strategy, \nCopywriting, Creative Direction, Digital Marketing. \n• \nExperience: \no Freelance Brand Designer: Developed full visual identities for three \nZimbabwean startups, increasing brand recognition by 40%. \no Content Strategist: Led a cross-functional team to design a social media \ncampaign that integrated high-level strategy with emotional storytelling. \n \n",
+        "skills_list": "adobe creative suite, photoshop, illustrator, indesign, branding strategy, copywriting, creative direction, digital marketing, brand storytelling, conceptual strategy, artistic vision, market requirements, engagement, visual identities, brand recognition, content strategy, social media campaign, high-level strategy, emotional storytelling",
+        "target_analytical": 92,
+        "target_practical": 76,
+        "target_relational": 44,
+        "target_experimental": 44
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 6,
+    "fields": {
+        "name": "",
+        "surname": "",
+        "username": "mukudzei",
+        "email": "",
+        "user": 7,
+        "role": "EMPLOYEE",
+        "location": "",
+        "birth_date": null,
+        "bio": null,
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 7,
+    "fields": {
+        "name": "",
+        "surname": "",
+        "username": "mmreinhard",
+        "email": null,
+        "user": 11,
+        "role": "EMPLOYEE",
+        "location": "",
+        "birth_date": null,
+        "bio": null,
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 8,
+    "fields": {
+        "name": "",
+        "surname": "",
+        "username": "",
+        "email": null,
+        "user": 12,
+        "role": "EMPLOYEE",
+        "location": "",
+        "birth_date": null,
+        "bio": null,
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 9,
+    "fields": {
+        "name": "",
+        "surname": "",
+        "username": "qwexty33",
+        "email": null,
+        "user": 16,
+        "role": "EMPLOYEE",
+        "location": "",
+        "birth_date": null,
+        "bio": null,
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "accounts.employee_account",
+    "pk": 10,
+    "fields": {
+        "name": "Mukudzei Reinhard",
+        "surname": "Mbiri",
+        "username": "dr3",
+        "email": "muchemwaano@gmail.com",
+        "user": 17,
+        "role": "EMPLOYEE",
+        "location": "Masvingo",
+        "birth_date": "2012-07-09",
+        "bio": "accountant",
+        "resume": "",
+        "uploaded_at": null,
+        "cv_text": null,
+        "skills_list": null,
+        "target_analytical": 0,
+        "target_practical": 0,
+        "target_relational": 0,
+        "target_experimental": 0
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 1,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mukudzei",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-01T10:53:51.137Z",
+        "logout_time": null,
+        "session_hash": "80e1993c4632a25757151693940950ba9596693d9e23cdce7567d6826011f0d1"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 2,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardx",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-01T11:04:14.744Z",
+        "logout_time": null,
+        "session_hash": "2fc7b50d44e525fc2a59a114356d7df78785dbfe2d9d02060a4e1fdac3f7d708"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 3,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-01T11:40:58.079Z",
+        "logout_time": "2026-06-01T11:42:01.410Z",
+        "session_hash": "09e5cbf778b9124ae188dd204fd1b5f1006320a64170678ab79bcd8d1d720fcc"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 4,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "dr3",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/signup/",
+        "attempt_time": "2026-06-01T12:20:24.781Z",
+        "logout_time": null,
+        "session_hash": "a5f2e4f7bdef5696cbaff7363d6f08ec54e993bcb788cf8613a66cb95fa8d680"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 5,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mck",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-01T13:10:21.572Z",
+        "logout_time": null,
+        "session_hash": "121bd20e1bd3948a6ff2ab8d321f4dbcdd22254279cb002852cbb47461b87faf"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 6,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-02T14:37:59.604Z",
+        "logout_time": null,
+        "session_hash": "e0194324df0b762e7acf6b9962a992e6bd2be2b8e2d84337196ed827d1b23a8d"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 7,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mck2",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-03T05:41:28.179Z",
+        "logout_time": null,
+        "session_hash": "ed71d038f1e005a054e76ac457bba3cad146cb04d287b002608da8f5e0f2b4e1"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 8,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:45:19.716Z",
+        "logout_time": "2026-06-03T05:46:26.166Z",
+        "session_hash": "85d2eb576d9f5bb261b76bd776883b152d1cb0e3dfe54d7a9bb433aa6b01cfd3"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 9,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mck",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:46:33.116Z",
+        "logout_time": "2026-06-03T05:46:59.674Z",
+        "session_hash": "ef8ded08642bfddf66fcc8a3e87abfa54951d96d1fd143300d47608aebf2e150"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 10,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:47:11.219Z",
+        "logout_time": "2026-06-03T05:47:34.747Z",
+        "session_hash": "b05bb6cc23b4997c9ae151e12aedf26710e66bb2219dca5e664af0831b015834"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 11,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:47:41.482Z",
+        "logout_time": "2026-06-03T05:48:58.159Z",
+        "session_hash": "b4346dfed7a0bf0fedd1bf297be7b12bc96d9e352a9469663214d42cec2533de"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 12,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:49:16.980Z",
+        "logout_time": "2026-06-03T05:49:23.544Z",
+        "session_hash": "c06cacf6eca5c125908580a455c9653e8db29d70488d343f8b29d5215dedf780"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 13,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mck",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:49:34.276Z",
+        "logout_time": "2026-06-03T05:52:57.626Z",
+        "session_hash": "20407ba364e0d4cbd0f498b4b9660048bf0a5637f24015afa23cca257a27b811"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 14,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:53:13.901Z",
+        "logout_time": "2026-06-03T05:56:06.575Z",
+        "session_hash": "6a3fb7b6d277b31c317cbd17cfb68be9b0a125726b9a9fa221fbb81302e42184"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 15,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "mck",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/admin/login/",
+        "attempt_time": "2026-06-03T05:56:20.777Z",
+        "logout_time": null,
+        "session_hash": "2c759621731afee172ba800fdc4b34b5768037ef5f0852ddd629be3fc75763a1"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 16,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-03T06:14:34.241Z",
+        "logout_time": null,
+        "session_hash": "49e9e664c1efc9d404af8315e2e2e9851aced7ea9bcfe9b18f4f62486488b2c7"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 17,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-03T06:29:09.828Z",
+        "logout_time": "2026-06-05T02:19:18.921Z",
+        "session_hash": "650106e5a081460a7522d55694667aa20b3ad2d6bc612b917f038e2dab5fa7dd"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 18,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-04T16:18:54.743Z",
+        "logout_time": "2026-06-05T02:19:18.921Z",
+        "session_hash": "650106e5a081460a7522d55694667aa20b3ad2d6bc612b917f038e2dab5fa7dd"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 19,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:19:09.087Z",
+        "logout_time": "2026-06-05T02:19:18.921Z",
+        "session_hash": "650106e5a081460a7522d55694667aa20b3ad2d6bc612b917f038e2dab5fa7dd"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 20,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "R22906U",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:24:25.637Z",
+        "logout_time": "2026-06-05T02:24:34.935Z",
+        "session_hash": "d14e4bc60f2ed929440c6ac965ea8c22bf7d12ea48b8dfe7d1deda2c96b0987c"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 21,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:31:54.262Z",
+        "logout_time": "2026-06-05T02:31:56.463Z",
+        "session_hash": "b6409faf3b1e770f68c342ad8d95b2116501353948ba21085ad91b7c2ba68314"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 22,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:38:25.985Z",
+        "logout_time": "2026-06-05T02:38:28.005Z",
+        "session_hash": "aabeb19aa6dccf3e442d8f730523c7566179141318f197c868c65304ae8ad3c5"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 23,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:44:20.707Z",
+        "logout_time": "2026-06-05T02:44:22.526Z",
+        "session_hash": "276bd35fa70ef7eaffeff72c1f705a670241f1d182fe4a253c7fc8fad1e84b78"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 24,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "betty",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:44:31.758Z",
+        "logout_time": "2026-06-05T02:44:38.687Z",
+        "session_hash": "3eb5e3f56b97cee55baca5c0439382c58445f75d5189b8afa5088a45390e9544"
+    }
+},
+{
+    "model": "axes.accesslog",
+    "pk": 25,
+    "fields": {
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1",
+        "username": "reinhardmuchemwa",
+        "http_accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "path_info": "/accounts/login/",
+        "attempt_time": "2026-06-05T02:45:04.242Z",
+        "logout_time": null,
+        "session_hash": "de22b7d52ee649b5c3f6dc825f2d2ddd96759c815baa5116fead40ba36c85754"
+    }
+}
 ]
